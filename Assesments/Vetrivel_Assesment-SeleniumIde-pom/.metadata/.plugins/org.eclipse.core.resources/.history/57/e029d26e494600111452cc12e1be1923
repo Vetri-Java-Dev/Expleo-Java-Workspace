@@ -1,0 +1,29 @@
+package com.dataProviders;
+
+import org.testng.annotations.DataProvider;
+import com.utility.ExcelUtils;
+
+public class DataProviderForSignUp {
+
+    @DataProvider(name = "signupData")
+    public Object[][] signupData() {
+        return ExcelUtils.readExcel("Test-Data.xlsx", "Signup");
+    }
+
+    @DataProvider(name = "existingEmailData")
+    public Object[][] existingEmailData() {
+        return ExcelUtils.readExcel("Test-Data.xlsx", "ExistingEmail");
+    }
+
+    @DataProvider(name = "validLoginData")
+    public Object[][] validLoginData() {
+        return ExcelUtils.readExcel("Test-Data.xlsx", "ValidLogin");
+    }
+
+    @DataProvider(name = "invalidLoginData")
+    public Object[][] invalidLoginData() {
+        return ExcelUtils.readExcel("Test-Data.xlsx", "InvalidLogin");
+    }
+    
+    
+}

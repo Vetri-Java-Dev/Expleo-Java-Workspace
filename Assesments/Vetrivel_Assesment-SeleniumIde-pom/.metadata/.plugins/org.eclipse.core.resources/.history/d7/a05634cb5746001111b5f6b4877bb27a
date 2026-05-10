@@ -1,0 +1,52 @@
+package com.pages;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
+public class ProductsPage extends BasePage {
+
+	public ProductsPage(WebDriver driver) {
+		super(driver);
+	}
+	
+	By searchInput=By.xpath("//*[@id=\"search_product\"]");
+	By searchButton=By.xpath("//*[@id=\"submit_search\"]");
+	By searchResults=By.xpath("//*[@id=\"cartModal\"]/following-sibling::div");
+	
+	public void search(String keyword) {
+		wait.until(ExpectedConditions.visibilityOfElementLocated(searchInput))
+		.sendKeys(keyword);
+	}
+	
+	public void submit() {
+
+	    WebElement btn = wait.until(
+	        ExpectedConditions.presenceOfElementLocated(searchButton)
+	    );
+
+	    // Scroll into view
+	    ((JavascriptExecutor) driver).executeScript(
+	        "arguments[0].scrollIntoView(true);", btn
+	    );
+
+	    // Wait for ads/overlays to disappear (important)
+	    wait.until(ExpectedConditions.invisibilityOfElementLocated(
+	        By.cssSelector("iframe[id^='aswift']")
+	    ));
+
+	    // Final safe click using JS (bypass overlay issues)
+	    ((JavascriptExecutor) driver).executeScript(
+	        "arguments[0].click();", btn
+	    );
+	}
+	
+	public List<WebElement> searchResult() {
+		return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(searchResults));
+	}
+
+}

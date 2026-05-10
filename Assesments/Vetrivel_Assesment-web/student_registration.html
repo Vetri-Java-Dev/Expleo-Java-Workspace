@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <center>
+        <p>Kindly fill the form to register as a student.</p>
+    </center>
+
+    <form id="regForm" novalidate>
+
+        <label>Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname"><br>
+        <span class="error-msg" id="err-fullname"></span>
+
+        <label>Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <span class="error-msg" id="err-email"></span>
+
+        <label>Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob"><br>
+        <span class="error-msg" id="err-dob"></span>
+
+        <label>Gender:</label>
+        <div class="radio-group">
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="other"> Other</label>
+        </div>
+
+        <label>Languages Known:</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="lang" value="english"> English</label>
+            <label><input type="checkbox" name="lang" value="tamil"> Tamil</label>
+            <label><input type="checkbox" name="lang" value="hindi"> Hindi</label>
+        </div>
+
+        <label>Course:</label><br>
+        <select id="course" name="course">
+            <option value="">-- Select a Course --</option>
+            <option>BE</option>
+            <option>ME</option>
+            <option>MBA</option>
+            <option>MCA</option>
+        </select><br>
+        <span class="error-msg" id="err-course"></span>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <center>
+        <h3>Campus Facilities</h3>
+        <ul>
+            <li>Library</li>
+            <li>Lab facilities</li>
+            <li>Sports support</li>
+        </ul>
+        <footer>
+            <p>Vetrivel B 2026</p>
+        </footer>
+    </center>
+
+    <script src="validate.js"></script>
+</body>
+</html>

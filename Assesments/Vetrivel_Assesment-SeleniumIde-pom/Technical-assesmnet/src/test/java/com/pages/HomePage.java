@@ -1,0 +1,32 @@
+package com.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
+public class HomePage extends BasePage {
+
+	public HomePage(WebDriver driver) {
+		super(driver);
+	}
+
+	By signUpLoginButton = By.xpath("//a[contains(text(),'Signup / Login')]");
+	By products = By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[2]/a");
+	By cart = By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[3]/a");
+
+	public void clickSignUpLoginButton() {
+		wait.until(ExpectedConditions.elementToBeClickable(signUpLoginButton)).click();
+	}
+
+	public void clickProduct() {
+	    safeClick(products);
+	}
+
+	public void openCart() {
+		wait.until(ExpectedConditions.elementToBeClickable(cart)).click();
+	}
+
+	
+}

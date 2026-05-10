@@ -1,0 +1,56 @@
+package com.pages;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import com.utility.OverlayUtil;
+
+public class ProductsPage extends BasePage {
+
+	public ProductsPage(WebDriver driver) {
+		super(driver);
+	}
+
+	By searchInput = By.xpath("//*[@id=\"search_product\"]");
+	By searchButton = By.xpath("//*[@id=\"submit_search\"]");
+	By searchResults = By.xpath("//div[@class='productinfo text-center']");
+
+	By added = By.xpath("//*[@id=\"cartModal\"]/div/div/div[1]/h4");
+
+	public void search(String keyword) {
+	    safeType(searchInput, keyword);
+	}
+
+	public void submit() {
+	    safeClick(searchButton);    
+	}
+
+	public List<WebElement> searchResult() {
+		return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(searchResults));
+	}
+
+	public WebElement getAddToCartButton(String productName) {
+		return wait.until(ExpectedConditions
+				.visibilityOfElementLocated(By.xpath("//div[@class='productinfo text-center']//p[text()='" + productName
+						+ "']/ancestor::div[@class='product-image-wrapper']" + "//a[contains(text(),'Add to cart')]")));
+	}
+
+	public void addFirstProductToCart() {
+
+	    handleOverlay();
+	    By firstProductAddBtn = By.xpath(
+	        "(//div[@class='product-image-wrapper'])[1]//a[contains(text(),'Add to cart')]"
+	    );
+	    safeClick(firstProductAddBtn);
+	}
+
+	public WebElement getAdded() {
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(added));
+	}
+
+}

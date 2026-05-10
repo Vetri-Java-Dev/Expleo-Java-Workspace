@@ -1,0 +1,21 @@
+package com.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class CartPage extends BasePage{
+
+	public CartPage(WebDriver driver) {
+		super(driver);
+	}
+
+	By checkout=By.xpath("//*[@id=\"do_action\"]/div[1]/div/div/a");
+	
+	public By getCheckout() {
+		return checkout;
+	}
+
+	public void setCheckout(By checkout) {
+		this.checkout = checkout;
+	}
+}

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-29T16:21:37 IST" name="Default suite" finished-at="2026-04-29T16:22:12 IST" duration-ms="35131">
+    <groups>
+    </groups>
+    <test started-at="2026-04-29T16:21:37 IST" name="Default test" finished-at="2026-04-29T16:22:12 IST" duration-ms="35131">
+      <class name="com.tests.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.LoginTest@661972b0]" started-at="2026-04-29T16:21:38 IST" name="setUp" finished-at="2026-04-29T16:21:42 IST" duration-ms="3361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidLoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.tests.LoginTest@661972b0]" started-at="2026-04-29T16:21:42 IST" name="invalidLoginTest" data-provider="testDataForInvalid" finished-at="2026-04-29T16:21:44 IST" duration-ms="2435" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Shobs]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[shobi112]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.LoginTest@661972b0]" started-at="2026-04-29T16:21:44 IST" name="tearDown" finished-at="2026-04-29T16:21:44 IST" duration-ms="435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.LoginTest@661972b0]" started-at="2026-04-29T16:21:44 IST" name="setUp" finished-at="2026-04-29T16:21:47 IST" duration-ms="2694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidLoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.tests.LoginTest@661972b0]" started-at="2026-04-29T16:21:47 IST" name="invalidLoginTest" data-provider="testDataForInvalid" finished-at="2026-04-29T16:21:50 IST" duration-ms="2430" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vetri1734]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vetri12234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.LoginTest@661972b0]" started-at="2026-04-29T16:21:50 IST" name="tearDown" finished-at="2026-04-29T16:21:50 IST" duration-ms="420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.LoginTest@661972b0]" started-at="2026-04-29T16:21:50 IST" name="setUp" finished-at="2026-04-29T16:21:52 IST" duration-ms="2027" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidLoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.tests.LoginTest@661972b0]" started-at="2026-04-29T16:21:52 IST" name="invalidLoginTest" data-provider="testDataForInvalid" finished-at="2026-04-29T16:21:54 IST" duration-ms="2254" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.LoginTest@661972b0]" started-at="2026-04-29T16:21:54 IST" name="tearDown" finished-at="2026-04-29T16:21:55 IST" duration-ms="240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.LoginTest@661972b0]" started-at="2026-04-29T16:21:55 IST" name="setUp" finished-at="2026-04-29T16:21:57 IST" duration-ms="2265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validLoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.tests.LoginTest@661972b0]" started-at="2026-04-29T16:21:57 IST" name="validLoginTest" data-provider="testDataForValid" finished-at="2026-04-29T16:22:00 IST" duration-ms="3098" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Shobs]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[shobi11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.LoginTest@661972b0]" started-at="2026-04-29T16:22:00 IST" name="tearDown" finished-at="2026-04-29T16:22:00 IST" duration-ms="228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.LoginTest@661972b0]" started-at="2026-04-29T16:22:00 IST" name="setUp" finished-at="2026-04-29T16:22:03 IST" duration-ms="2508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validLoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.tests.LoginTest@661972b0]" started-at="2026-04-29T16:22:03 IST" name="validLoginTest" data-provider="testDataForValid" finished-at="2026-04-29T16:22:06 IST" duration-ms="3242" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.LoginTest@661972b0]" started-at="2026-04-29T16:22:06 IST" name="tearDown" finished-at="2026-04-29T16:22:06 IST" duration-ms="392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.LoginTest@661972b0]" started-at="2026-04-29T16:22:06 IST" name="setUp" finished-at="2026-04-29T16:22:09 IST" duration-ms="2453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validLoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.tests.LoginTest@661972b0]" started-at="2026-04-29T16:22:09 IST" name="validLoginTest" data-provider="testDataForValid" finished-at="2026-04-29T16:22:12 IST" duration-ms="3314" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[anandkumar@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Anandkumar@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.LoginTest@661972b0]" started-at="2026-04-29T16:22:12 IST" name="tearDown" finished-at="2026-04-29T16:22:12 IST" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tests.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

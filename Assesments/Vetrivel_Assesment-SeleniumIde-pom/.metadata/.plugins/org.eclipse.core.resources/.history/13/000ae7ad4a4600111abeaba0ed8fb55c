@@ -1,0 +1,28 @@
+package com.tests;
+
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+
+import com.actions.SearchAction;
+import com.listeners.ListenerForAutomationExercise;
+
+@Listeners(ListenerForAutomationExercise.class)
+public class SearchTest extends BaseTest {
+
+	private static SearchAction action;
+	
+	@BeforeMethod
+	public void init() {
+		action=new SearchAction(driver.get());
+	}
+	
+	@Test(dataProvider="validsearch", dataProviderClass=ListenerForAutomationExercise.class)
+	public void search(String keyword) {
+		action.search(keyword);
+		Assert.assertTrue(action.isExist(keyword));
+	}
+	
+	
+}

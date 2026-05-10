@@ -1,0 +1,47 @@
+package com.actions;
+
+import java.util.List;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+import com.pages.HomePage;
+import com.pages.ProductsPage;
+import com.utility.OverlayUtil;
+
+public class SearchAction {
+	
+	private static ProductsPage productsPage;
+	private static HomePage homePage;
+	
+	public SearchAction(WebDriver driver){
+		productsPage=new ProductsPage(driver);
+		homePage=new HomePage(driver);
+	}
+	
+	public void search(String keyword) {
+		homePage.clickProduct();
+		productsPage.search(keyword);
+		productsPage.submit();
+	}
+	
+	public boolean isExist(String keyword) {
+		
+		List<WebElement> results=productsPage.searchResult();
+		
+		if(results.size()<=0)return false;
+		
+		return true;
+	}
+	
+	public void addToCart(String keyword) {
+		search(keyword);
+		productsPage.addFirstProductToCart();
+	}
+	
+	public String getAdded() {
+		return productsPage.getAdded().getText();
+	}
+	
+}

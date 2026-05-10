@@ -1,0 +1,23 @@
+package com.tests;
+
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.actions.SearchAction;
+
+public class SearchTest extends BaseTest {
+
+	private static SearchAction action;
+	
+	@BeforeMethod
+	public void init() {
+		action=new SearchAction(driver.get());
+	}
+	
+	@Test
+	public void search(String keyword) {
+		action.search(keyword);
+		Assert.assertTrue(action.isExist(keyword));
+	}
+}

@@ -1,0 +1,47 @@
+package com.tests;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
+public class BaseTest {
+
+    protected static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+
+    @BeforeMethod
+    public void setUp() {
+
+        ChromeOptions options = new ChromeOptions();
+
+        // Disable ads & popups
+        options.addArguments("--disable-notifications");
+        options.addArguments("--disable-infobars");
+        options.addArguments("--disable-extensions");
+        options.addArguments("--disable-popup-blocking");
+
+        // Block ads (important)
+        options.addArguments("--disable-blink-features=AutomationControlled");
+
+        // Optional: disable images (reduces ad loading)
+        options.addArguments("--blink-settings=imagesEnabled=false");
+
+        driver.set(new ChromeDriver(options));
+
+        getDriver().manage().window().maximize();
+        getDriver().get("https://automationexercise.com");
+    }
+    
+    public WebDriver getDriver() {
+        return driver.get();
+    }
+
+    @AfterMethod
+    public void tearDown() {
+        if (getDriver() != null) {
+            getDriver().quit();
+            driver.remove();
+        }
+    }
+}

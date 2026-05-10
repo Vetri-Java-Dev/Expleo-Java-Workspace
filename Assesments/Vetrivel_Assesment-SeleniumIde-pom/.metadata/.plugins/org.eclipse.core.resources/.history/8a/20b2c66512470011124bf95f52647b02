@@ -1,0 +1,79 @@
+package com.pages;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import com.utility.OverlayUtil;
+
+public class ProductsPage extends BasePage {
+
+	public ProductsPage(WebDriver driver) {
+		super(driver);
+	}
+
+	By searchInput = By.xpath("//*[@id=\"search_product\"]");
+	By searchButton = By.xpath("//*[@id=\"submit_search\"]");
+	By searchResults = By.xpath("//*[@id=\"cartModal\"]/following-sibling::div");
+
+	By added = By.xpath("//*[@id=\"cartModal\"]/div/div/div[1]/h4");
+
+	public void safeType(By locator, String text) {
+
+	    WebElement element = wait.until(
+	        ExpectedConditions.visibilityOfElementLocated(locator)
+	    );
+
+	    // Scroll to safe position
+	    ((JavascriptExecutor) driver).executeScript(
+	        "arguments[0].scrollIntoView({block:'center'});", element
+	    );
+
+	    try {
+	        wait.until(ExpectedConditions.elementToBeClickable(element));
+	        element.clear();
+	        element.sendKeys(text);
+
+	    } catch (Exception e) {
+
+	        // JS fallback + trigger input event
+	        ((JavascriptExecutor) driver).executeScript(
+	            "arguments[0].value = arguments[1]; " +
+	            "arguments[0].dispatchEvent(new Event('input'));",
+	            element, text
+	        );
+	    }
+	}
+	public void search(String keyword) {
+	    safeType(searchInput, keyword);
+	}
+
+	public void submit() {
+	    safeClick(searchButton);    
+	}
+
+	public List<WebElement> searchResult() {
+		return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(searchResults));
+	}
+
+	public WebElement getAddToCartButton(String productName) {
+		return wait.until(ExpectedConditions
+				.visibilityOfElementLocated(By.xpath("//div[@class='productinfo text-center']//p[text()='" + productName
+						+ "']/ancestor::div[@class='product-image-wrapper']" + "//a[contains(text(),'Add to cart')]")));
+	}
+
+	public void addFirstProductToCart() {
+		List<WebElement> products = driver.findElements(By.xpath("//div[@class='product-image-wrapper']"));
+
+		products.get(0).findElement(By.xpath(".//a[contains(text(),'Add to cart')]")).click();
+	}
+
+	public WebElement getAdded() {
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(added));
+	}
+
+}

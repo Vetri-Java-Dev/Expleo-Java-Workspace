@@ -1,0 +1,66 @@
+package com.pages;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
+
+import com.utility.OverlayUtil;
+
+public class BasePage {
+
+    protected WebDriver driver;
+    protected WebDriverWait wait;
+
+    public BasePage(WebDriver driver) {
+        this.driver = driver;
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+    }
+
+    protected void handleOverlay() {
+        OverlayUtil.handleAdIfPresent(driver);
+    }
+
+    protected WebElement find(By locator) {
+        handleOverlay();
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    protected void safeClick(By locator) {
+
+        handleOverlay();
+
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block:'center'});", element);
+
+        try {
+            wait.until(ExpectedConditions.elementToBeClickable(element));
+            element.click();
+        }
+        catch (Exception e) {
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+        }
+    }
+
+    protected void safeType(By locator, String text) {
+    	
+        handleOverlay();
+
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+
+        try {
+            element.clear();
+            element.sendKeys(text);
+            
+        } 
+        catch (Exception e) {
+            ((JavascriptExecutor) driver).executeScript("arguments[0].value = arguments[1];",element, text);
+        }
+    }
+}

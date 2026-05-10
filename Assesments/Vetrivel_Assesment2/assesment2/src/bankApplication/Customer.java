@@ -1,0 +1,30 @@
+package bankApplication;
+
+public class Customer {
+	private String name;
+	private int id;
+	private char gender;
+	
+	public Customer(String name, int id, char gender) {
+		this.name = name;
+		this.id = id;
+		this.gender = gender;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public int getId() {
+		return id;
+	}
+	public char getGender() {
+		return gender;
+	}
+
+	@Override
+	public String toString() {
+		return "Customer [name=" + name + ", id=" + id + ", gender=" + gender + "]";
+	}
+	
+	
+}
