@@ -1,4 +1,4 @@
-Feature: M_VIGNESHWARANN_5TH_MAY_QAFox_AddToCartFearure
+Feature: Vetrivel_B_5TH_MAY_QAFox_AddToCartFearure
 
 	Background:
 		Given the user launches the application

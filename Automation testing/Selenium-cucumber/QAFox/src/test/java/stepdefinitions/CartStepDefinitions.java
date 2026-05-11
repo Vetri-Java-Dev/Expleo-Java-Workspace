@@ -29,12 +29,14 @@ public class CartStepDefinitions {
 
 	@Then("the cart should display the added cart products")
 	public void the_cart_should_display_the_added_cart_products(io.cucumber.datatable.DataTable dataTable) {
+		
 		List<String> products = sa.getCartProducts();
 		int numberOfProducts = products.size();
 		List<String> data = dataTable.asLists().get(0);
+		
 		for (String key : data) {
-			for (String product : products) {
-				
+			
+			for (String product : products) {	
 				System.out.println(key+" "+product);
 				if (product.equalsIgnoreCase(key)) {
 					numberOfProducts--;
@@ -43,6 +45,6 @@ public class CartStepDefinitions {
 			}
 		}
 		
-		Assert.assertTrue(numberOfProducts == 0);
+		Assert.assertTrue(numberOfProducts==0);
 	}
 }

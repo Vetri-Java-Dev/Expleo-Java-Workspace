@@ -1,27 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-10T23:12:44 IST" name="Default suite" finished-at="2026-05-10T23:13:20 IST" duration-ms="35619">
+  <suite started-at="2026-05-11T10:53:02 IST" name="Default suite" finished-at="2026-05-11T10:53:26 IST" duration-ms="24950">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2f953efd]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-05-10T23:12:44 IST" name="Default test" finished-at="2026-05-10T23:13:20 IST" duration-ms="35619">
+    <test started-at="2026-05-11T10:53:02 IST" name="Default test" finished-at="2026-05-11T10:53:26 IST" duration-ms="24950">
       <class name="runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@2f953efd]" started-at="2026-05-10T23:12:44 IST" name="setUpClass" finished-at="2026-05-10T23:12:45 IST" duration-ms="1066" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@2f953efd]" started-at="2026-05-11T10:53:02 IST" name="setUpClass" finished-at="2026-05-11T10:53:02 IST" duration-ms="341" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@79ba0a6f]]>
+                <![CDATA[org.testng.TestRunner@2d10e0b1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2f953efd]" started-at="2026-05-10T23:12:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-10T23:13:16 IST" duration-ms="30579" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2f953efd]" started-at="2026-05-11T10:53:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-11T10:53:11 IST" duration-ms="9074" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Vetrivel_B_5TH_MAY_QAFox_LoginFearure"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2f953efd]" started-at="2026-05-11T10:53:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-11T10:53:10 IST" duration-ms="8451" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Vetrivel_B_5TH_MAY_QAFox_LoginFearure"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2f953efd]" started-at="2026-05-11T10:53:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-11T10:53:12 IST" duration-ms="10472" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Add To Cart with valid search keys"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Vetrivel_B_5TH_MAY_QAFox_AddToCartFearure"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2f953efd]" started-at="2026-05-11T10:53:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-11T10:53:26 IST" duration-ms="24460" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -30,7 +78,7 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["M_VIGNESHWARANN_5TH_MAY_QAFox_RegisterFearure"]]>
+                <![CDATA["Vetrivel_B_5TH_MAY_QAFox_RegisterFearure"]]>
               </value>
             </param>
           </params>
@@ -41,8 +89,8 @@
 Build info: version: '4.43.0', revision: 'dd0f534'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.96, chrome: {chromedriverVersion: 148.0.7778.97 (6b3fa66a923a..., userDataDir: C:\Users\VETRIV~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51669}, goog:processID: 11720, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51669/devtoo..., se:cdpVersion: 148.0.7778.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5f72aac54719a993b223bba967b64342]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.96, chrome: {chromedriverVersion: 148.0.7778.97 (6b3fa66a923a..., userDataDir: C:\Users\VETRIV~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55803}, goog:processID: 17240, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55803/devtoo..., se:cdpVersion: 148.0.7778.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9a0c9300ed36f58f0beb52e6b3fb3800]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.xpath: //h1[text() = "Your Account Has Been Created!"], but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[text() = "Your Account Has Been Created!"]"}.
@@ -50,8 +98,8 @@ Session ID: 5f72aac54719a993b223bba967b64342]]>
 Build info: version: '4.43.0', revision: 'dd0f534'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.96, chrome: {chromedriverVersion: 148.0.7778.97 (6b3fa66a923a..., userDataDir: C:\Users\VETRIV~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51669}, goog:processID: 11720, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51669/devtoo..., se:cdpVersion: 148.0.7778.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5f72aac54719a993b223bba967b64342
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.96, chrome: {chromedriverVersion: 148.0.7778.97 (6b3fa66a923a..., userDataDir: C:\Users\VETRIV~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55803}, goog:processID: 17240, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55803/devtoo..., se:cdpVersion: 148.0.7778.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9a0c9300ed36f58f0beb52e6b3fb3800
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
 at actions.RegistrationActions.getGreetMessage(RegistrationActions.java:91)
@@ -63,92 +111,7 @@ at ✽.the greet message should appear as "Your Account Has Been Created!";(file
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2f953efd]" started-at="2026-05-10T23:12:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-10T23:13:01 IST" duration-ms="15682" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify login with valid credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["M_VIGNESHWARANN_5TH_MAY_QAFox_LoginFearure"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2f953efd]" started-at="2026-05-10T23:12:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-10T23:13:01 IST" duration-ms="15703" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify login with valid credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["M_VIGNESHWARANN_5TH_MAY_QAFox_LoginFearure"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2f953efd]" started-at="2026-05-10T23:12:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-10T23:13:03 IST" duration-ms="17381" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify Add To Cart with valid search keys"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["M_VIGNESHWARANN_5TH_MAY_QAFox_AddToCartFearure"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <i class="fa fa-shopping-cart"></i> is not clickable at point (1148, 6). Other element would receive the click: <div id="top-links" class="nav pull-right">...</div>
-  (Session info: chrome=148.0.7778.96)
-Build info: version: '4.43.0', revision: 'dd0f534'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e910f7e502b3707afae624703087e0c1, clickElement {id=f.33D18E56DC0C5FD263710B961C53E5CC.d.8020147C47D37625FD36C045504F5BBB.e.151}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.96, chrome: {chromedriverVersion: 148.0.7778.97 (6b3fa66a923a..., userDataDir: C:\Users\VETRIV~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65266}, goog:processID: 17792, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65266/devtoo..., se:cdpVersion: 148.0.7778.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (e910f7e502b3707afae624703087e0c1)] -> xpath: //i[@class = "fa fa-shopping-cart"]]
-Session ID: e910f7e502b3707afae624703087e0c1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i class="fa fa-shopping-cart"></i> is not clickable at point (1148, 6). Other element would receive the click: <div id="top-links" class="nav pull-right">...</div>
-  (Session info: chrome=148.0.7778.96)
-Build info: version: '4.43.0', revision: 'dd0f534'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e910f7e502b3707afae624703087e0c1, clickElement {id=f.33D18E56DC0C5FD263710B961C53E5CC.d.8020147C47D37625FD36C045504F5BBB.e.151}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.96, chrome: {chromedriverVersion: 148.0.7778.97 (6b3fa66a923a..., userDataDir: C:\Users\VETRIV~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65266}, goog:processID: 17792, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65266/devtoo..., se:cdpVersion: 148.0.7778.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (e910f7e502b3707afae624703087e0c1)] -> xpath: //i[@class = "fa fa-shopping-cart"]]
-Session ID: e910f7e502b3707afae624703087e0c1
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at actions.SearchActions.goToCart(SearchActions.java:48)
-at stepdefinitions.CartStepDefinitions.click_cart_button(CartStepDefinitions.java:27)
-at ✽.click cart button(file:///D:/Expleo-Training/Automation%20testing/Selenium-cucumber/QAFox/src/test/resources/features/cart.feature:13)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@2f953efd]" started-at="2026-05-10T23:13:16 IST" name="tearDownClass" finished-at="2026-05-10T23:13:20 IST" duration-ms="3881" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@2f953efd]" started-at="2026-05-11T10:53:26 IST" name="tearDownClass" finished-at="2026-05-11T10:53:26 IST" duration-ms="72" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

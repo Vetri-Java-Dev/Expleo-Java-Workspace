@@ -1,4 +1,4 @@
-Feature: M_VIGNESHWARANN_5TH_MAY_QAFox_LoginFearure
+Feature: Vetrivel_B_5TH_MAY_QAFox_LoginFearure
 
 	Background:
 		Given the user launches the application

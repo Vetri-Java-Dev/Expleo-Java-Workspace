@@ -18,6 +18,7 @@ import io.cucumber.java.Scenario;
 
 
 public class Hooks {
+	
 	public static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
     public static WebDriverWait wait;
     
@@ -39,7 +40,7 @@ public class Hooks {
 			FileHandler.copy(src, new File("test-output/screenshots/"+scenario.getName()+System.currentTimeMillis()+".png"));
 			
 			byte[] img = sc.getScreenshotAs(OutputType.BYTES);
-			scenario.attach(img, "image/png", "Failure Screenshot");
+			scenario.attach(img,"image/png", "Failure Screenshot");
 			
 		}
 	
