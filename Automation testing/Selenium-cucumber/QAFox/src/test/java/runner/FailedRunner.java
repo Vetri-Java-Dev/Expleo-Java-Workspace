@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		features = "@target/failed-rerun.txt",
 		glue = "stepdefinitions",
-				plugin = {"usage",
+		plugin = {"usage",
 						"rerun:target/failed-rerun.txt"
 				}
 )

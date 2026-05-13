@@ -9,7 +9,7 @@ import io.cucumber.testng.CucumberOptions;
 		features = "src/test/resources/features",
 		glue = "stepdefinitions",
 				plugin = {"usage",
-						"rerun:target/failed-rerun.txt"}
+				 		"rerun:target/failed-rerun.txt"}
 )
 
 public class TestRunner extends AbstractTestNGCucumberTests{
