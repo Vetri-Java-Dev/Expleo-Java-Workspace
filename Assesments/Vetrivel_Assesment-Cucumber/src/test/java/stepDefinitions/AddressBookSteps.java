@@ -38,13 +38,13 @@ public class AddressBookSteps {
         addressPage.clickAddressBook();
         addressPage.clickNewAddress();
 
-        String firstName = data.get("firstname");
-        String lastName = data.get("lastname");
-        String address = data.get("address1");
-        String city = data.get("city");
-        String postcode = data.get("postcode");
-        String country = data.get("country");
-        String region = data.get("region");
+        String firstName=data.get("firstname");
+        String lastName=data.get("lastname");
+        String address=data.get("address1");
+        String city=data.get("city");
+        String postcode=data.get("postcode");
+        String country=data.get("country");
+        String region=data.get("region");
 
         addressPage.addAddress(firstName,lastName,address,city,postcode,country,region);
         addressPage.clickContinue();

@@ -1,2 +1,3 @@
-2026/05/10-21:53:53.711 32e8 Creating DB D:\Expleo-Training\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Sync Data\LevelDB since it was missing.
-2026/05/10-21:53:53.722 32e8 Reusing MANIFEST D:\Expleo-Training\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Sync Data\LevelDB/MANIFEST-000001
+2026/05/14-16:42:41.163 57dc Reusing MANIFEST D:\Expleo-Training\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Sync Data\LevelDB/MANIFEST-000001
+2026/05/14-16:42:41.167 57dc Recovering log #3
+2026/05/14-16:42:41.168 57dc Reusing old log D:\Expleo-Training\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Sync Data\LevelDB/000003.log 

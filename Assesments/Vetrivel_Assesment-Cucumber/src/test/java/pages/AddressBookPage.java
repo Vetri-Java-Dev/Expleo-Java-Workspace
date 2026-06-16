@@ -16,9 +16,9 @@ public class AddressBookPage {
     WebDriverWait wait;
 
     public AddressBookPage(WebDriver driver) {
-        this.driver = driver;
+        this.driver=driver;
         PageFactory.initElements(driver, this);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait=new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
     @FindBy(linkText="Address Book")
@@ -66,7 +66,7 @@ public class AddressBookPage {
 
     public void addAddress(String firstName,String lastName,String address,String city,String postcode,String country,String region) {
         
-    		firstNameField.sendKeys(firstName);
+    	firstNameField.sendKeys(firstName);
         lastNameField.sendKeys(lastName);
         addressField.sendKeys(address);
         cityField.sendKeys(city);
