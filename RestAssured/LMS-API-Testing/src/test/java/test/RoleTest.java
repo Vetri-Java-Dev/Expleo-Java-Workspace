@@ -1,10 +1,6 @@
 package test;
 
-import io.restassured.specification.RequestSpecification;
-import model.LoginRequest;
-import service.LoginService;
 import service.RoleService;
-import utility.TokenManager;
 
 import org.testng.annotations.Test;
 
@@ -15,7 +11,7 @@ import io.restassured.response.Response;
 
 public class RoleTest {
 	
-	@Test(dependsOnMethods="test.LoginTest.loginTest")
+	@Test(dependsOnMethods="test.LoginTest.validLoginTest")
 	public void roleTest() {
 		
 		Response response=RoleService.getAllRoles();
