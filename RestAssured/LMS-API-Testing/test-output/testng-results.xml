@@ -2,48 +2,48 @@
 <testng-results ignored="0" total="13" passed="10" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-18T01:30:06 IST" name="Suite" finished-at="2026-06-18T01:31:14 IST" duration-ms="68475">
+  <suite started-at="2026-06-18T01:33:14 IST" name="Suite" finished-at="2026-06-18T01:33:39 IST" duration-ms="25359">
     <groups>
     </groups>
-    <test started-at="2026-06-18T01:30:06 IST" name="Test" finished-at="2026-06-18T01:31:14 IST" duration-ms="68475">
+    <test started-at="2026-06-18T01:33:14 IST" name="Test" finished-at="2026-06-18T01:33:39 IST" duration-ms="25359">
       <class name="test.CourseTest">
-        <test-method signature="courseTest()[pri:0, instance:test.CourseTest@74e52303]" started-at="2026-06-18T01:31:10 IST" name="courseTest" finished-at="2026-06-18T01:31:13 IST" depends-on-methods="test.LoginTest.validLoginTest" duration-ms="2412" status="PASS">
+        <test-method signature="courseTest()[pri:0, instance:test.CourseTest@75437611]" started-at="2026-06-18T01:33:36 IST" name="courseTest" finished-at="2026-06-18T01:33:38 IST" depends-on-methods="test.LoginTest.validLoginTest" duration-ms="1630" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- courseTest -->
       </class> <!-- test.CourseTest -->
       <class name="test.LoginTest">
-        <test-method signature="validLoginTest()[pri:0, instance:test.LoginTest@32eff876]" started-at="2026-06-18T01:30:06 IST" name="validLoginTest" finished-at="2026-06-18T01:30:56 IST" duration-ms="49870" status="PASS">
+        <test-method signature="validLoginTest()[pri:0, instance:test.LoginTest@4b013c76]" started-at="2026-06-18T01:33:14 IST" name="validLoginTest" finished-at="2026-06-18T01:33:22 IST" duration-ms="7898" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method signature="missingFieldsTest()[pri:0, instance:test.LoginTest@32eff876]" started-at="2026-06-18T01:30:56 IST" name="missingFieldsTest" finished-at="2026-06-18T01:30:57 IST" duration-ms="1083" status="PASS">
+        <test-method signature="missingFieldsTest()[pri:0, instance:test.LoginTest@4b013c76]" started-at="2026-06-18T01:33:22 IST" name="missingFieldsTest" finished-at="2026-06-18T01:33:23 IST" duration-ms="971" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- missingFieldsTest -->
-        <test-method signature="unknownEmailTest()[pri:0, instance:test.LoginTest@32eff876]" started-at="2026-06-18T01:30:57 IST" name="unknownEmailTest" finished-at="2026-06-18T01:30:58 IST" duration-ms="1197" status="PASS">
+        <test-method signature="unknownEmailTest()[pri:0, instance:test.LoginTest@4b013c76]" started-at="2026-06-18T01:33:23 IST" name="unknownEmailTest" finished-at="2026-06-18T01:33:23 IST" duration-ms="617" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- unknownEmailTest -->
-        <test-method signature="wrongPasswordTest()[pri:0, instance:test.LoginTest@32eff876]" started-at="2026-06-18T01:30:58 IST" name="wrongPasswordTest" finished-at="2026-06-18T01:31:02 IST" duration-ms="3477" status="PASS">
+        <test-method signature="wrongPasswordTest()[pri:0, instance:test.LoginTest@4b013c76]" started-at="2026-06-18T01:33:23 IST" name="wrongPasswordTest" finished-at="2026-06-18T01:33:27 IST" duration-ms="3319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrongPasswordTest -->
       </class> <!-- test.LoginTest -->
       <class name="test.NoteTest">
-        <test-method signature="CreateNoteTest()[pri:0, instance:test.NoteTest@158da8e]" started-at="2026-06-18T01:31:02 IST" name="CreateNoteTest" finished-at="2026-06-18T01:31:03 IST" depends-on-methods="test.LoginTest.validLoginTest" duration-ms="1714" status="PASS">
+        <test-method signature="CreateNoteTest()[pri:0, instance:test.NoteTest@742ff096]" started-at="2026-06-18T01:33:27 IST" name="CreateNoteTest" finished-at="2026-06-18T01:33:28 IST" depends-on-methods="test.LoginTest.validLoginTest" duration-ms="1586" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateNoteTest -->
-        <test-method signature="deleteNoteTest()[pri:0, instance:test.NoteTest@158da8e]" started-at="2026-06-18T01:31:03 IST" name="deleteNoteTest" finished-at="2026-06-18T01:31:05 IST" depends-on-methods="test.LoginTest.validLoginTest" duration-ms="1466" status="PASS">
+        <test-method signature="deleteNoteTest()[pri:0, instance:test.NoteTest@742ff096]" started-at="2026-06-18T01:33:28 IST" name="deleteNoteTest" finished-at="2026-06-18T01:33:30 IST" depends-on-methods="test.LoginTest.validLoginTest" duration-ms="1990" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteNoteTest -->
-        <test-method signature="getAllNotesTest()[pri:0, instance:test.NoteTest@158da8e]" started-at="2026-06-18T01:31:05 IST" name="getAllNotesTest" finished-at="2026-06-18T01:31:06 IST" depends-on-methods="test.LoginTest.validLoginTest" duration-ms="1280" status="PASS">
+        <test-method signature="getAllNotesTest()[pri:0, instance:test.NoteTest@742ff096]" started-at="2026-06-18T01:33:30 IST" name="getAllNotesTest" finished-at="2026-06-18T01:33:31 IST" depends-on-methods="test.LoginTest.validLoginTest" duration-ms="1251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getAllNotesTest -->
-        <test-method signature="getNoteByIdTest()[pri:0, instance:test.NoteTest@158da8e]" started-at="2026-06-18T01:31:06 IST" name="getNoteByIdTest" finished-at="2026-06-18T01:31:07 IST" depends-on-methods="test.LoginTest.validLoginTest" duration-ms="1173" status="FAIL">
+        <test-method signature="getNoteByIdTest()[pri:0, instance:test.NoteTest@742ff096]" started-at="2026-06-18T01:33:31 IST" name="getNoteByIdTest" finished-at="2026-06-18T01:33:33 IST" depends-on-methods="test.LoginTest.validLoginTest" duration-ms="1259" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -96,11 +96,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getNoteByIdTest -->
-        <test-method signature="getNoteByInvalidIdTest()[pri:0, instance:test.NoteTest@158da8e]" started-at="2026-06-18T01:31:07 IST" name="getNoteByInvalidIdTest" finished-at="2026-06-18T01:31:09 IST" depends-on-methods="test.LoginTest.validLoginTest" duration-ms="1216" status="PASS">
+        <test-method signature="getNoteByInvalidIdTest()[pri:0, instance:test.NoteTest@742ff096]" started-at="2026-06-18T01:33:33 IST" name="getNoteByInvalidIdTest" finished-at="2026-06-18T01:33:34 IST" depends-on-methods="test.LoginTest.validLoginTest" duration-ms="1110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getNoteByInvalidIdTest -->
-        <test-method signature="togglePinTest()[pri:0, instance:test.NoteTest@158da8e]" started-at="2026-06-18T01:31:09 IST" name="togglePinTest" finished-at="2026-06-18T01:31:10 IST" depends-on-methods="test.LoginTest.validLoginTest" duration-ms="1099" status="FAIL">
+        <test-method signature="togglePinTest()[pri:0, instance:test.NoteTest@742ff096]" started-at="2026-06-18T01:33:34 IST" name="togglePinTest" finished-at="2026-06-18T01:33:35 IST" depends-on-methods="test.LoginTest.validLoginTest" duration-ms="1109" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -153,7 +153,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- togglePinTest -->
-        <test-method signature="updateNoteTest()[pri:0, instance:test.NoteTest@158da8e]" started-at="2026-06-18T01:31:10 IST" name="updateNoteTest" finished-at="2026-06-18T01:31:10 IST" depends-on-methods="test.LoginTest.validLoginTest" duration-ms="828" status="FAIL">
+        <test-method signature="updateNoteTest()[pri:0, instance:test.NoteTest@742ff096]" started-at="2026-06-18T01:33:35 IST" name="updateNoteTest" finished-at="2026-06-18T01:33:36 IST" depends-on-methods="test.LoginTest.validLoginTest" duration-ms="924" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -212,7 +212,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
         </test-method> <!-- updateNoteTest -->
       </class> <!-- test.NoteTest -->
       <class name="test.RoleTest">
-        <test-method signature="roleTest()[pri:0, instance:test.RoleTest@47af7f3d]" started-at="2026-06-18T01:31:13 IST" name="roleTest" finished-at="2026-06-18T01:31:14 IST" depends-on-methods="test.LoginTest.validLoginTest" duration-ms="1516" status="PASS">
+        <test-method signature="roleTest()[pri:0, instance:test.RoleTest@350aac89]" started-at="2026-06-18T01:33:38 IST" name="roleTest" finished-at="2026-06-18T01:33:39 IST" depends-on-methods="test.LoginTest.validLoginTest" duration-ms="1403" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- roleTest -->

@@ -3,6 +3,11 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="test.LoginTest">
+        <methods>
+          <include name="validLoginTest"/>
+        </methods>
+      </class> <!-- test.LoginTest -->
       <class name="test.NoteTest">
         <methods>
           <include name="getNoteByIdTest"/>
@@ -10,11 +15,6 @@
           <include name="togglePinTest"/>
         </methods>
       </class> <!-- test.NoteTest -->
-      <class name="test.LoginTest">
-        <methods>
-          <include name="validLoginTest"/>
-        </methods>
-      </class> <!-- test.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
