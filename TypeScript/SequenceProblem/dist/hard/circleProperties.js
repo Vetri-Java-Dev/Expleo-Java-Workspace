@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const radius = 5.0;
+const angle = 60.0;
+const pi = Math.PI;
+const diameter = 2 * radius;
+const circumference = 2 * pi * radius;
+const sectorArea = (angle / 360) * pi * radius * radius;
+const arcLength = (angle / 360) * 2 * pi * radius;
+console.log(`Radius: ${radius}`);
+console.log(`Diameter: ${diameter}`);
+console.log(`Circumference: ${circumference}`);
+console.log(`Sector Area for ${angle} degrees: ${sectorArea}`);
+console.log(`Arc Length for ${angle} degrees: ${arcLength}`);

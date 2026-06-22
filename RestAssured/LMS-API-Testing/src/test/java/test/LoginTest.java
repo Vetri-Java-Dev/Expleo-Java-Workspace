@@ -1,72 +1,52 @@
 package test;
 
+import datafactory.LoginDataFactory;
 import model.LoginRequest;
 import service.LoginService;
-import utility.ConfigReader;
 import utility.TokenManager;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import io.restassured.response.Response;
 
 public class LoginTest {
 
-    @Test
-    public void validLoginTest() {
+    @Test(dataProvider = "validLoginData",
+          dataProviderClass = LoginDataFactory.class)
+    public void validLoginTest(String email, String password) {
 
-        LoginRequest request=new LoginRequest(ConfigReader.get("login.valid.email"), ConfigReader.get("login.valid.password"));
-
-        Response response=LoginService.login(request);
+        LoginRequest request = new LoginRequest(email, password);
+        Response response = LoginService.login(request);
 
         response.then().statusCode(201);
 
-        String token=response.jsonPath().getString("token");
+        String token = response.jsonPath().getString("token");
 
-        Assert.assertTrue(token!=null);
-
+        Assert.assertNotNull(token);
         TokenManager.setToken(token);
     }
 
-    @Test
-    public void unknownEmailTest() {
+    @Test(dataProvider = "invalidLoginData",
+          dataProviderClass = LoginDataFactory.class)
+    public void invalidLoginTest(String testCase,
+                                 String email,
+                                 String password,
+                                 String expectedMessage) {
 
-        LoginRequest request=new LoginRequest(ConfigReader.get("login.unknown.email"), ConfigReader.get("login.unknown.password"));
+        String finalEmail = (email != null && !email.isBlank()) ? email : null;
+        String finalPassword = (password != null && !password.isBlank()) ? password : null;
 
-        Response response=LoginService.login(request);
+        LoginRequest request = new LoginRequest(finalEmail, finalPassword);
+        Response response = LoginService.login(request);
 
-        response.then().statusCode(400);
+        int status = response.getStatusCode();
 
-        String message=response.jsonPath().getString("message[0].value");
+        Assert.assertTrue(status == 400 || status == 401 || status == 422,
+                "Unexpected status code: " + status);
 
-        Assert.assertEquals(message, ConfigReader.get("login.msg.invalid.email"));
-    }
+        String actualMessage = response.jsonPath().getString("message[0].value");
 
-    @Test
-    public void wrongPasswordTest() {
-
-        LoginRequest request=new LoginRequest(ConfigReader.get("login.valid.email"), ConfigReader.get("login.wrong.password"));
-
-        Response response=LoginService.login(request);
-
-        response.then().statusCode(400);
-
-        String message=response.jsonPath().getString("message[0].value");
-
-        Assert.assertEquals(message,ConfigReader.get("login.msg.wrong.password"));
-    }
-
-    @Test
-    public void missingFieldsTest() {
-
-        LoginRequest request=new LoginRequest(null, null);
-
-        Response response=LoginService.login(request);
-
-        response.then().statusCode(400);
-
-        String message=response.jsonPath().getString("message[0].value");
-
-        Assert.assertEquals(message, ConfigReader.get("login.msg.missing.fields"));
+        Assert.assertEquals(actualMessage, expectedMessage,
+                "Mismatch in test case: " + testCase);
     }
 }

@@ -5,14 +5,9 @@
     <classes>
       <class name="test.LoginTest">
         <methods>
-          <include name="validLoginTest"/>
+          <include name="invalidLoginTest"/>
         </methods>
       </class> <!-- test.LoginTest -->
-      <class name="test.NoteTest">
-        <methods>
-          <include name="deleteNoteTest"/>
-        </methods>
-      </class> <!-- test.NoteTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

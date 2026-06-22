@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const input = "hello";
+const totalChars = input.length;
+const repeated = input + input;
+const firstChar = input[0];
+const firstThree = input.substring(0, 3);
+console.log(totalChars);
+console.log(repeated);
+console.log(firstChar);
+console.log(firstThree);

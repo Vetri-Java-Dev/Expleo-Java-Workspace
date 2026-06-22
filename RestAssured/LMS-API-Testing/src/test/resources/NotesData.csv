@@ -1,0 +1,5 @@
+title,content,tags,isPinned,color,_id,lastEdited
+Api testing,Rest assured,"[""Selenium"", ""Automation"", ""Test""]",True,blue,161,2026-06-22
+
+note.update.title,note.update.content,note.update.isPinned,note.update.color
+API Test Note (edited),Updated content,false,#ffeb3b

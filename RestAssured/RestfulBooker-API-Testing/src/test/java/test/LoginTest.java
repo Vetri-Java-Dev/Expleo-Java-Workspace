@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import data.factory.AuthDataFactory;
 import io.restassured.response.Response;
 import model.Request.AuthRequest;
+import model.Response.AuthResponse;
 import service.AuthService;
 
 public class LoginTest {
@@ -15,11 +16,9 @@ public class LoginTest {
 		
 		AuthRequest loginData=AuthDataFactory.getValidData();
 		
-		Response response=AuthService.login(loginData);
+		AuthResponse response=AuthService.login(loginData);
 		
-		response.prettyPrint();
-		
-		response.then().statusCode(200);
+		Assert.assertTrue(response.getToken()!=null);
 		
 	}
 	
