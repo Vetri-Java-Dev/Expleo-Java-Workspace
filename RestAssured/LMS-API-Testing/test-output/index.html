@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Vetrivel B\AppData\Local\Temp\testng-eclipse--1770300589\testng-customsuite.xml</span>
+                    <span>C:\Users\Vetrivel B\AppData\Local\Temp\testng-eclipse--1109919430\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="test.LoginTest" class="method navigator-link" hash-for-method="invalidLoginTest">invalidLoginTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,6 +101,31 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.LoginTest" class="method navigator-link" hash-for-method="invalidLoginTest(Empty Email, null, 123)">invalidLoginTest(Empty Email, null, 123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.LoginTest" class="method navigator-link" hash-for-method="invalidLoginTest(Invalid Email, wrong@gmail.com, 123)">invalidLoginTest(Invalid Email, wrong@gmail.com, 123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.LoginTest" class="method navigator-link" hash-for-method="invalidLoginTest(Both Empty, null, null)">invalidLoginTest(Both Empty, null, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.LoginTest" class="method navigator-link" hash-for-method="invalidLoginTest(Empty Password, sam@gmail.com, null)">invalidLoginTest(Empty Password, sam@gmail.com, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.LoginTest" class="method navigator-link" hash-for-method="invalidLoginTest(Invalid Password, sam@gmail.com, 1234)">invalidLoginTest(Invalid Password, sam@gmail.com, 1234)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="test.LoginTest" class="method navigator-link" hash-for-method="validLoginTest(sam@gmail.com, 123)">validLoginTest(sam@gmail.com, 123)</a> <!-- method navigator-link -->
@@ -132,57 +143,52 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">test.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="invalidLoginTest">
-                  </a> <!-- invalidLoginTest -->
-                  <span class="method-name">invalidLoginTest</span>
-                  <div class="stack-trace">org.testng.internal.reflect.MethodMatcherException: 
-[public void test.LoginTest.invalidLoginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: invalidLoginTest([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3])
-Arguments: [(java.lang.String) Invalid Email,(java.lang.String) wrong@gmail.com,(java.lang.String) 123]
-	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
-	at org.testng.internal.Parameters.injectParameters(Parameters.java:915)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">test.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLoginTest(Empty Email, null, 123)">
+                  </a> <!-- invalidLoginTest(Empty Email, null, 123) -->
+                  <span class="method-name">invalidLoginTest</span>
+                  <span class="parameters">(Empty Email,null,123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLoginTest(Invalid Email, wrong@gmail.com, 123)">
+                  </a> <!-- invalidLoginTest(Invalid Email, wrong@gmail.com, 123) -->
+                  <span class="method-name">invalidLoginTest</span>
+                  <span class="parameters">(Invalid Email,wrong@gmail.com,123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLoginTest(Both Empty, null, null)">
+                  </a> <!-- invalidLoginTest(Both Empty, null, null) -->
+                  <span class="method-name">invalidLoginTest</span>
+                  <span class="parameters">(Both Empty,null,null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLoginTest(Empty Password, sam@gmail.com, null)">
+                  </a> <!-- invalidLoginTest(Empty Password, sam@gmail.com, null) -->
+                  <span class="method-name">invalidLoginTest</span>
+                  <span class="parameters">(Empty Password,sam@gmail.com,null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLoginTest(Invalid Password, sam@gmail.com, 1234)">
+                  </a> <!-- invalidLoginTest(Invalid Password, sam@gmail.com, 1234) -->
+                  <span class="method-name">invalidLoginTest</span>
+                  <span class="parameters">(Invalid Password,sam@gmail.com,1234)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="validLoginTest(sam@gmail.com, 123)">
@@ -196,7 +202,7 @@ Arguments: [(java.lang.String) Invalid Email,(java.lang.String) wrong@gmail.com,
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Vetrivel B\AppData\Local\Temp\testng-eclipse--1770300589\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Vetrivel B\AppData\Local\Temp\testng-eclipse--1109919430\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -245,20 +251,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validLoginTest')
+data.setCell(0, 1, 'invalidLoginTest')
 data.setCell(0, 2, 'test.LoginTest')
-data.setCell(0, 3, 7065);
+data.setCell(0, 3, 3855);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'invalidLoginTest')
+data.setCell(1, 1, 'validLoginTest')
 data.setCell(1, 2, 'test.LoginTest')
-data.setCell(1, 3, 806);
+data.setCell(1, 3, 3759);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'invalidLoginTest')
+data.setCell(2, 2, 'test.LoginTest')
+data.setCell(2, 3, 3397);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'invalidLoginTest')
+data.setCell(3, 2, 'test.LoginTest')
+data.setCell(3, 3, 807);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'invalidLoginTest')
+data.setCell(4, 2, 'test.LoginTest')
+data.setCell(4, 3, 796);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'invalidLoginTest')
+data.setCell(5, 2, 'test.LoginTest')
+data.setCell(5, 3, 373);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -286,8 +308,28 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">test.LoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">validLoginTest(sam@gmail.com, 123)</span>
+                <span class="method-name">invalidLoginTest(Invalid Email, wrong@gmail.com, 123)</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidLoginTest(Invalid Password, sam@gmail.com, 1234)</span>
+                <span class="method-start">3934 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidLoginTest(Empty Password, sam@gmail.com, null)</span>
+                <span class="method-start">7334 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidLoginTest(Empty Email, null, 123)</span>
+                <span class="method-start">8133 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidLoginTest(Both Empty, null, null)</span>
+                <span class="method-start">8944 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validLoginTest(sam@gmail.com, 123)</span>
+                <span class="method-start">9356 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
