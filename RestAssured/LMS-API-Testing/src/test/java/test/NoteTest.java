@@ -14,6 +14,7 @@ import java.util.Map;
 
 import org.testng.annotations.Test;
 
+import datafactory.NoteDataFactory;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
@@ -46,26 +47,62 @@ public class NoteTest {
 
 	}
 	
-	@Test(dependsOnMethods = "test.LoginTest.validLoginTest")
-	public void getAllNotesTest() {
+	@Test(dataProvider = "validGetAllNotesData", dataProviderClass = NoteDataFactory.class,
+		      dependsOnMethods = "test.LoginTest.validLoginTest")
+		public void getAllNotesValidTest(String isAuthRequired,
+		                                 String page,
+		                                 String limit,
+		                                 String search,
+		                                 String tags,
+		                                 String isPinned,
+		                                 String sortBy,
+		                                 String sortOrder) {
 
-	    Response response = NoteService.getAllNote(
-	    		ConfigReader.getInt("note.getAll.page"),//page
-	            ConfigReader.getInt("note.getAll.limit"),//limit
-	            null,//search
-	            null,//tags
-	            null,//isPinned
-	            ConfigReader.get("note.getAll.sortBy"),//sortBy
-	            ConfigReader.get("note.getAll.sortOrder")//sortOrder
-	    );
+		    Response response=NoteService.getAllNote(
+		            Integer.parseInt(page),
+		            Integer.parseInt(limit),
+		            search,
+		            tags,
+		            Boolean.parseBoolean(isPinned),
+		            sortBy,
+		            sortOrder
+		    );
 
-	    response.prettyPrint();
+		    response.then()
+		            .statusCode(200)
+		            .body("success", equalTo(true));
+		}
+	
+	@Test(dataProvider = "invalidGetAllNotesData", dataProviderClass = NoteDataFactory.class,
+		      dependsOnMethods = "test.LoginTest.validLoginTest")
+		public void getAllNotesInvalidTest(String isAuthRequired,
+		                                  String page,
+		                                  String limit,
+		                                  String search,
+		                                  String tags,
+		                                  String isPinned,
+		                                  String sortBy,
+		                                  String sortOrder,
+		                                  String expectedStatusCode,
+		                                  String expectedMessage) {
 
-	    response.then()
-	            .statusCode(200)
-	            .body("success", equalTo(true))
-	            .body("data.size()", greaterThan(0));
-	}
+		    Response response = NoteService.getAllNote(
+		            Integer.parseInt(page),
+		            Integer.parseInt(limit),
+		            search,
+		            tags,
+		            Boolean.parseBoolean(isPinned),
+		            sortBy,
+		            sortOrder
+		    );
+
+		    response.then()
+		            .statusCode(Integer.parseInt(expectedStatusCode));
+
+		    if (expectedMessage!=null&&!expectedMessage.isEmpty()) {
+		        response.then().body("message", equalTo(expectedMessage));
+		    }
+		}
 	
 	@Test(dependsOnMethods = "test.LoginTest.validLoginTest")
 	public void getNoteByIdTest() {

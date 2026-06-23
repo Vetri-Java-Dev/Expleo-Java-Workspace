@@ -5,8 +5,7 @@ import org.testng.annotations.DataProvider;
 
 public class LoginDataFactory {
 
-    private static final String TEST_DATA_EXCEL =
-            "src/test/resources/TestData.xlsx";
+    private static final String TEST_DATA_EXCEL="src/test/resources/TestData.xlsx";
 
     @DataProvider(name = "validLoginData")
     public static Object[][] validLoginData() {
