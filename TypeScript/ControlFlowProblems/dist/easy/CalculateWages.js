@@ -1,0 +1,13 @@
+"use strict";
+let emp_names = "Vetrivel";
+let emp_ages = 21;
+let emp_wage = 4000;
+let noofDay = 30;
+let tot = null;
+console.log("-----Employee Details-----");
+console.log("Name:", emp_names);
+console.log("Age:", emp_ages);
+console.log("Wages:", emp_wage);
+console.log("No of Days:", noofDay);
+tot = emp_wage * noofDay;
+console.log("Total Salary:", tot);

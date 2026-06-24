@@ -47,8 +47,8 @@ public class NoteTest {
 
 	}
 	
-	@Test(dataProvider = "validGetAllNotesData", dataProviderClass = NoteDataFactory.class,
-		      dependsOnMethods = "test.LoginTest.validLoginTest")
+	@Test(dataProvider="validGetAllNotesData",dataProviderClass=NoteDataFactory.class,
+		      dependsOnMethods="test.LoginTest.validLoginTest")
 		public void getAllNotesValidTest(String isAuthRequired,
 		                                 String page,
 		                                 String limit,
@@ -73,7 +73,7 @@ public class NoteTest {
 		            .body("success", equalTo(true));
 		}
 	
-	@Test(dataProvider = "invalidGetAllNotesData", dataProviderClass = NoteDataFactory.class,
+	@Test(dataProvider="invalidGetAllNotesData",dataProviderClass=NoteDataFactory.class,
 		      dependsOnMethods = "test.LoginTest.validLoginTest")
 		public void getAllNotesInvalidTest(String isAuthRequired,
 		                                  String page,

@@ -8,5 +8,5 @@ if (a+b>c && a+c>b && b+c>a) {
   console.log(`The area of the triangle is: ${area}`);
 }
 else {
-  console.log("Error: The given sides do not form a valid triangle.");
+  console.log("Error.");
 }
