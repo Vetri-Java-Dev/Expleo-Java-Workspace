@@ -21,6 +21,7 @@ test("Login DemoBlaze",async()=>{
     await page.goBack()
 
     console.log(await page.title())
+    await page.reload()
 
     await page.goForward()
 
