@@ -1,0 +1,560 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: filemanipulation.test.ts >> Download Pdf
+- Location: tests\filemanipulation.test.ts:16:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: page.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('//button[@id=\'btn-size-100kb\']')
+    - locator resolved to <button class="btn-dl" id="btn-size-100kb" onclick="downloadPDF('size-100kb')">…</button>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - performing click action
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e5]
+        - text: Now with Text + Images in every PDF
+      - heading "Sample PDF Files With Text & Images — Any Size" [level=1] [ref=e9]:
+        - text: Sample PDF Files
+        - text: With Text & Images — Any Size
+      - paragraph [ref=e10]: Free test PDFs with real text content and embedded images. Each page contains both text blocks and a generated image. Perfect for testing uploads, renderers, and viewers.
+      - generic [ref=e11]:
+        - link "100 KB" [ref=e12] [cursor=pointer]:
+          - /url: "#size-100kb"
+        - link "500 KB" [ref=e13] [cursor=pointer]:
+          - /url: "#size-500kb"
+        - link "1 MB" [ref=e14] [cursor=pointer]:
+          - /url: "#size-1mb"
+        - link "2 MB" [ref=e15] [cursor=pointer]:
+          - /url: "#size-2mb"
+        - link "5 MB" [ref=e16] [cursor=pointer]:
+          - /url: "#size-5mb"
+        - link "10 MB" [ref=e17] [cursor=pointer]:
+          - /url: "#size-10mb"
+        - link "50 MB" [ref=e18] [cursor=pointer]:
+          - /url: "#size-50mb"
+        - link "100 MB" [ref=e19] [cursor=pointer]:
+          - /url: "#size-100mb"
+  - main [ref=e20]:
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - img [ref=e24]
+        - generic [ref=e27]:
+          - heading "8 File Sizes" [level=3] [ref=e28]
+          - paragraph [ref=e29]: 100KB up to 100MB — every size for testing
+      - generic [ref=e30]:
+        - img [ref=e32]
+        - generic [ref=e36]:
+          - heading "Text + Images" [level=3] [ref=e37]
+          - paragraph [ref=e38]: Every page has real content & embedded PNG images
+      - generic [ref=e39]:
+        - img [ref=e41]
+        - generic [ref=e44]:
+          - heading "Browser Generated" [level=3] [ref=e45]
+          - paragraph [ref=e46]: Built instantly in your browser — no server
+      - generic [ref=e47]:
+        - img [ref=e49]
+        - generic [ref=e52]:
+          - heading "Exact File Sizes" [level=3] [ref=e53]
+          - paragraph [ref=e54]: Padded precisely to hit the target byte count
+    - generic [ref=e55]:
+      - heading "Choose Your File Size" [level=2] [ref=e56]
+      - paragraph [ref=e58]: Each PDF includes text & images on every page
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - generic [ref=e62]:
+          - generic [ref=e63]:
+            - generic [ref=e64]: "100"
+            - generic [ref=e65]: KB
+          - generic [ref=e66]:
+            - generic [ref=e67]: 100 KB Sample PDF
+            - generic [ref=e68]: Quick tests, small form submissions, email testing
+            - generic [ref=e69]:
+              - img [ref=e70]
+              - text: 102,400 bytes
+        - generic [ref=e90]:
+          - text: Text + Image
+          - text: preview
+        - generic [ref=e91]:
+          - generic [ref=e92]: Size
+          - generic [ref=e95]: 100 KB
+        - generic [ref=e96]:
+          - generic [ref=e97]: Email attachments
+          - generic [ref=e98]: Quick upload test
+          - generic [ref=e99]: Small forms
+          - generic [ref=e100]: 🖼 Embedded Images
+        - button "Download 100 KB" [ref=e102] [cursor=pointer]:
+          - img [ref=e103]
+          - text: Download 100 KB
+      - generic [ref=e105]:
+        - generic [ref=e107]:
+          - generic [ref=e108]:
+            - generic [ref=e109]: "500"
+            - generic [ref=e110]: KB
+          - generic [ref=e111]:
+            - generic [ref=e112]: 500 KB Sample PDF
+            - generic [ref=e113]: Web form upload limits, light CMS document testing
+            - generic [ref=e114]:
+              - img [ref=e115]
+              - text: 512,000 bytes
+        - generic [ref=e135]:
+          - text: Text + Image
+          - text: preview
+        - generic [ref=e136]:
+          - generic [ref=e137]: Size
+          - generic [ref=e140]: 500 KB
+        - generic [ref=e141]:
+          - generic [ref=e142]: Upload limits
+          - generic [ref=e143]: Web forms
+          - generic [ref=e144]: CMS testing
+          - generic [ref=e145]: 🖼 Embedded Images
+        - button "Download 500 KB" [ref=e147] [cursor=pointer]:
+          - img [ref=e148]
+          - text: Download 500 KB
+      - generic [ref=e150]:
+        - generic [ref=e152]:
+          - generic [ref=e153]:
+            - generic [ref=e154]: "1"
+            - generic [ref=e155]: MB
+          - generic [ref=e156]:
+            - generic [ref=e157]: 1 MB Sample PDF
+            - generic [ref=e158]: Standard upload limit testing, REST API file endpoints
+            - generic [ref=e159]:
+              - img [ref=e160]
+              - text: 1,048,576 bytes
+        - generic [ref=e180]:
+          - text: Text + Image
+          - text: preview
+        - generic [ref=e181]:
+          - generic [ref=e182]: Size
+          - generic [ref=e185]: 1 MB
+        - generic [ref=e186]:
+          - generic [ref=e187]: Standard upload
+          - generic [ref=e188]: API testing
+          - generic [ref=e189]: Common limit
+          - generic [ref=e190]: 🖼 Embedded Images
+        - button "Download 1 MB" [ref=e192] [cursor=pointer]:
+          - img [ref=e193]
+          - text: Download 1 MB
+      - generic [ref=e195]:
+        - generic [ref=e197]:
+          - generic [ref=e198]:
+            - generic [ref=e199]: "2"
+            - generic [ref=e200]: MB
+          - generic [ref=e201]:
+            - generic [ref=e202]: 2 MB Sample PDF
+            - generic [ref=e203]: Email attachment limits, cloud storage integrations
+            - generic [ref=e204]:
+              - img [ref=e205]
+              - text: 2,097,152 bytes
+        - generic [ref=e225]:
+          - text: Text + Image
+          - text: preview
+        - generic [ref=e226]:
+          - generic [ref=e227]: Size
+          - generic [ref=e230]: 2 MB
+        - generic [ref=e231]:
+          - generic [ref=e232]: Email limit
+          - generic [ref=e233]: Cloud storage
+          - generic [ref=e234]: File parsing
+          - generic [ref=e235]: 🖼 Embedded Images
+        - button "Download 2 MB" [ref=e237] [cursor=pointer]:
+          - img [ref=e238]
+          - text: Download 2 MB
+      - generic [ref=e240]:
+        - generic [ref=e242]:
+          - generic [ref=e243]:
+            - generic [ref=e244]: "5"
+            - generic [ref=e245]: MB
+          - generic [ref=e246]:
+            - generic [ref=e247]: 5 MB Sample PDF
+            - generic [ref=e248]: Document management systems, mobile upload testing
+            - generic [ref=e249]:
+              - img [ref=e250]
+              - text: 5,242,880 bytes
+        - generic [ref=e270]:
+          - text: Text + Image
+          - text: preview
+        - generic [ref=e271]:
+          - generic [ref=e272]: Size
+          - generic [ref=e275]: 5 MB
+        - generic [ref=e276]:
+          - generic [ref=e277]: DMS testing
+          - generic [ref=e278]: Bandwidth test
+          - generic [ref=e279]: Mobile upload
+          - generic [ref=e280]: 🖼 Embedded Images
+        - button "Download 5 MB" [ref=e282] [cursor=pointer]:
+          - img [ref=e283]
+          - text: Download 5 MB
+      - generic [ref=e285]:
+        - generic [ref=e287]:
+          - generic [ref=e288]:
+            - generic [ref=e289]: "10"
+            - generic [ref=e290]: MB
+          - generic [ref=e291]:
+            - generic [ref=e292]: 10 MB Sample PDF
+            - generic [ref=e293]: Load testing, server-side file processing benchmarks
+            - generic [ref=e294]:
+              - img [ref=e295]
+              - text: 10,485,760 bytes
+        - generic [ref=e315]:
+          - text: Text + Image
+          - text: preview
+        - generic [ref=e316]:
+          - generic [ref=e317]: Size
+          - generic [ref=e320]: 10 MB
+        - generic [ref=e321]:
+          - generic [ref=e322]: Load testing
+          - generic [ref=e323]: Speed benchmark
+          - generic [ref=e324]: Server limits
+          - generic [ref=e325]: 🖼 Embedded Images
+        - button "Download 10 MB" [ref=e327] [cursor=pointer]:
+          - img [ref=e328]
+          - text: Download 10 MB
+      - generic [ref=e330]:
+        - generic [ref=e332]:
+          - generic [ref=e333]:
+            - generic [ref=e334]: "50"
+            - generic [ref=e335]: MB
+          - generic [ref=e336]:
+            - generic [ref=e337]: 50 MB Sample PDF
+            - generic [ref=e338]: CDN performance, S3 upload tests, storage APIs
+            - generic [ref=e339]:
+              - img [ref=e340]
+              - text: 52,428,800 bytes
+        - generic [ref=e360]:
+          - text: Text + Image
+          - text: preview
+        - generic [ref=e361]:
+          - generic [ref=e362]: Size
+          - generic [ref=e365]: 50 MB
+        - generic [ref=e366]:
+          - generic [ref=e367]: CDN testing
+          - generic [ref=e368]: Heavy bandwidth
+          - generic [ref=e369]: S3 / storage
+          - generic [ref=e370]: 🖼 Embedded Images
+        - button "Download 50 MB" [ref=e372] [cursor=pointer]:
+          - img [ref=e373]
+          - text: Download 50 MB
+      - generic [ref=e375]:
+        - generic [ref=e377]:
+          - generic [ref=e378]:
+            - generic [ref=e379]: "100"
+            - generic [ref=e380]: MB
+          - generic [ref=e381]:
+            - generic [ref=e382]: 100 MB Sample PDF
+            - generic [ref=e383]: Chunk/multipart upload testing, maximum stress testing
+            - generic [ref=e384]:
+              - img [ref=e385]
+              - text: 104,857,600 bytes
+        - generic [ref=e405]:
+          - text: Text + Image
+          - text: preview
+        - generic [ref=e406]:
+          - generic [ref=e407]: Size
+          - generic [ref=e410]: 100 MB
+        - generic [ref=e411]:
+          - generic [ref=e412]: Maximum stress test
+          - generic [ref=e413]: Chunk upload
+          - generic [ref=e414]: Large file API
+          - generic [ref=e415]: 🖼 Embedded Images
+        - button "Download 100 MB" [ref=e417] [cursor=pointer]:
+          - img [ref=e418]
+          - text: Download 100 MB
+    - generic [ref=e420]:
+      - heading "File Size Comparison" [level=2] [ref=e422]
+      - table [ref=e425]:
+        - rowgroup [ref=e426]:
+          - row "File Name Exact Size Relative Size Best For Status" [ref=e427]:
+            - columnheader "File Name" [ref=e428]
+            - columnheader "Exact Size" [ref=e429]
+            - columnheader "Relative Size" [ref=e430]
+            - columnheader "Best For" [ref=e431]
+            - columnheader "Status" [ref=e432]
+        - rowgroup [ref=e433]:
+          - row "sample-100kb.pdf 102,400 bytes Email & forms Very Small · Instant" [ref=e434]:
+            - cell "sample-100kb.pdf" [ref=e435]
+            - cell "102,400 bytes" [ref=e436]
+            - cell [ref=e437]
+            - cell "Email & forms" [ref=e440]
+            - cell "Very Small · Instant" [ref=e441]
+          - row "sample-500kb.pdf 512,000 bytes Web uploads Small · Instant" [ref=e442]:
+            - cell "sample-500kb.pdf" [ref=e443]
+            - cell "512,000 bytes" [ref=e444]
+            - cell [ref=e445]
+            - cell "Web uploads" [ref=e448]
+            - cell "Small · Instant" [ref=e449]
+          - row "sample-1mb.pdf 1,048,576 bytes API & uploads Standard · Instant" [ref=e450]:
+            - cell "sample-1mb.pdf" [ref=e451]
+            - cell "1,048,576 bytes" [ref=e452]
+            - cell [ref=e453]
+            - cell "API & uploads" [ref=e456]
+            - cell "Standard · Instant" [ref=e457]
+          - row "sample-2mb.pdf 2,097,152 bytes Email & cloud Medium · Instant" [ref=e458]:
+            - cell "sample-2mb.pdf" [ref=e459]
+            - cell "2,097,152 bytes" [ref=e460]
+            - cell [ref=e461]
+            - cell "Email & cloud" [ref=e464]
+            - cell "Medium · Instant" [ref=e465]
+          - row "sample-5mb.pdf 5,242,880 bytes DMS & mobile Medium · ~1s" [ref=e466]:
+            - cell "sample-5mb.pdf" [ref=e467]
+            - cell "5,242,880 bytes" [ref=e468]
+            - cell [ref=e469]
+            - cell "DMS & mobile" [ref=e472]
+            - cell "Medium · ~1s" [ref=e473]
+          - row "sample-10mb.pdf 10,485,760 bytes Load testing Large · ~2s" [ref=e474]:
+            - cell "sample-10mb.pdf" [ref=e475]
+            - cell "10,485,760 bytes" [ref=e476]
+            - cell [ref=e477]
+            - cell "Load testing" [ref=e480]
+            - cell "Large · ~2s" [ref=e481]
+          - row "sample-50mb.pdf 52,428,800 bytes CDN & storage Very Large · ~5–10s" [ref=e482]:
+            - cell "sample-50mb.pdf" [ref=e483]
+            - cell "52,428,800 bytes" [ref=e484]
+            - cell [ref=e485]
+            - cell "CDN & storage" [ref=e488]
+            - cell "Very Large · ~5–10s" [ref=e489]
+          - row "sample-100mb.pdf 104,857,600 bytes Stress testing Max · ~15–25s" [ref=e490]:
+            - cell "sample-100mb.pdf" [ref=e491]
+            - cell "104,857,600 bytes" [ref=e492]
+            - cell [ref=e493]
+            - cell "Stress testing" [ref=e496]
+            - cell "Max · ~15–25s" [ref=e497]
+    - generic [ref=e498]:
+      - heading "Why Use These Sample PDF Files?" [level=2] [ref=e499]
+      - paragraph [ref=e500]: Each PDF contains real text content and embedded images — ideal for realistic testing.
+      - generic [ref=e501]:
+        - generic [ref=e502]:
+          - img [ref=e504]
+          - heading "Realistic Image Content" [level=3] [ref=e508]
+          - paragraph [ref=e509]: Each PDF contains Canvas-generated PNG images alongside text — not just blank padded files.
+        - generic [ref=e510]:
+          - img [ref=e512]
+          - heading "Benchmark Download Speed" [level=3] [ref=e515]
+          - paragraph [ref=e516]: Use 10MB, 50MB and 100MB files to measure download throughput and CDN performance.
+        - generic [ref=e517]:
+          - img [ref=e519]
+          - heading "PDF Viewer Testing" [level=3] [ref=e522]
+          - paragraph [ref=e523]: Verify that your PDF viewer renders both text layout and embedded images correctly.
+        - generic [ref=e524]:
+          - img [ref=e526]
+          - heading "Upload Limit Testing" [level=3] [ref=e529]
+          - paragraph [ref=e530]: Check whether your web app, CMS, or API accepts mixed-content files of a given size.
+        - generic [ref=e531]:
+          - img [ref=e533]
+          - heading "Safe & Private" [level=3] [ref=e536]
+          - paragraph [ref=e537]: Files are generated entirely in your browser — no data is sent to any server.
+        - generic [ref=e538]:
+          - img [ref=e540]
+          - heading "QA & Integration Testing" [level=3] [ref=e542]
+          - paragraph [ref=e543]: Test document management systems with realistic PDF content including images and formatted text.
+    - generic [ref=e544]:
+      - heading "Frequently Asked Questions" [level=2] [ref=e545]
+      - paragraph [ref=e546]: Everything about sample PDF files with text and images.
+      - generic [ref=e547]:
+        - generic [ref=e548]:
+          - generic [ref=e549] [cursor=pointer]:
+            - text: What content is inside each PDF?
+            - img [ref=e550]
+          - generic: Each PDF contains 2 pages. Page 1 is a cover page with a header banner, file metadata table, a description block, and an embedded color PNG image (generated via HTML Canvas). Page 2 is a content page with multiple text sections and a second embedded image showing a chart/pattern. All content is real and renders correctly in any PDF viewer.
+        - generic [ref=e552]:
+          - generic [ref=e553] [cursor=pointer]:
+            - text: How are the images generated?
+            - img [ref=e554]
+          - generic: Images are drawn using an HTML Canvas element in your browser, then exported as PNG data. The canvas draws colorful geometric shapes, gradients, and patterns unique to each file size. This PNG is then embedded directly into the PDF using pdf-lib's image embedding API — no external images or servers are involved.
+        - generic [ref=e556]:
+          - generic [ref=e557] [cursor=pointer]:
+            - text: Are these valid, openable PDF files?
+            - img [ref=e558]
+          - generic: Yes. Every file is a fully valid PDF that opens correctly in Adobe Acrobat, Chrome, Firefox, Edge, Preview on macOS, and all other standard PDF viewers. The embedded images display correctly alongside the text content.
+        - generic [ref=e560]:
+          - generic [ref=e561] [cursor=pointer]:
+            - text: Why does the 50MB or 100MB file take longer?
+            - img [ref=e562]
+          - generic: Large files require generating a significant amount of padding data in your browser's JavaScript engine. The PDF content (text + images) is built first, then padding is appended as a raw data stream to reach the exact target size. The progress bar shows real-time generation status.
+        - generic [ref=e564]:
+          - generic [ref=e565] [cursor=pointer]:
+            - text: Are these files safe to download?
+            - img [ref=e566]
+          - generic: Yes. Everything is generated entirely in your browser using JavaScript — nothing is downloaded from an external server, and no data leaves your device. The PDFs contain only text, PNG images drawn on a canvas, and padding data. No scripts, no macros, no executable code.
+    - generic [ref=e568]:
+      - heading "More Free PDF Tools" [level=2] [ref=e569]
+      - paragraph [ref=e570]: Everything you need for working with PDF files — all free and browser-based.
+      - generic [ref=e571]:
+        - link "PDF to JPG" [ref=e572] [cursor=pointer]:
+          - /url: https://qwikpdf.com/pdf-to-jpg-converter.html
+          - img [ref=e573]
+          - text: PDF to JPG
+        - link "PDF to PNG" [ref=e577] [cursor=pointer]:
+          - /url: https://qwikpdf.com/pdf-to-png-converter.html
+          - img [ref=e578]
+          - text: PDF to PNG
+        - link "PDF to BMP" [ref=e582] [cursor=pointer]:
+          - /url: https://qwikpdf.com/pdf-to-bmp-converter.html
+          - img [ref=e583]
+          - text: PDF to BMP
+        - link "Watermark PDF" [ref=e587] [cursor=pointer]:
+          - /url: https://qwikpdf.com/add-watermark-to-pdf.html
+          - img [ref=e588]
+          - text: Watermark PDF
+        - link "Merge PDFs" [ref=e591] [cursor=pointer]:
+          - /url: https://qwikpdf.com/pdf-merger.html
+          - img [ref=e592]
+          - text: Merge PDFs
+        - link "Split PDF" [ref=e594] [cursor=pointer]:
+          - /url: https://qwikpdf.com/pdf-splitter.html
+          - img [ref=e595]
+          - text: Split PDF
+        - link "Rotate PDF" [ref=e597] [cursor=pointer]:
+          - /url: https://qwikpdf.com/rotate-pdf.html
+          - img [ref=e598]
+          - text: Rotate PDF
+        - link "Organize Pages" [ref=e601] [cursor=pointer]:
+          - /url: https://qwikpdf.com/pdf-organizer.html
+          - img [ref=e602]
+          - text: Organize Pages
+        - link "Compress PDF" [ref=e606] [cursor=pointer]:
+          - /url: https://qwikpdf.com/compress-pdf.html
+          - img [ref=e607]
+          - text: Compress PDF
+        - link "Draw on PDF" [ref=e610] [cursor=pointer]:
+          - /url: https://qwikpdf.com/draw-on-pdf-online.html
+          - img [ref=e611]
+          - text: Draw on PDF
+        - link "White Out PDF" [ref=e613] [cursor=pointer]:
+          - /url: https://qwikpdf.com/white-out-pdf-text.html
+          - img [ref=e614]
+          - text: White Out PDF
+        - link "Add Image to PDF" [ref=e617] [cursor=pointer]:
+          - /url: https://qwikpdf.com/add-image-to-pdf.html
+          - img [ref=e618]
+          - text: Add Image to PDF
+        - link "Crop PDF" [ref=e623] [cursor=pointer]:
+          - /url: https://qwikpdf.com/crop-pdf.html
+          - img [ref=e624]
+          - text: Crop PDF
+        - link "Add Shapes" [ref=e627] [cursor=pointer]:
+          - /url: https://qwikpdf.com/add-shapes-to-pdf.html
+          - img [ref=e628]
+          - text: Add Shapes
+        - link "PDF Metadata" [ref=e633] [cursor=pointer]:
+          - /url: https://qwikpdf.com/pdf-metadata-editor.html
+          - img [ref=e634]
+          - text: PDF Metadata
+        - link "Sign PDF" [ref=e637] [cursor=pointer]:
+          - /url: https://qwikpdf.com/sign-pdf-online.html
+          - img [ref=e638]
+          - text: Sign PDF
+        - link "Fill PDF Forms" [ref=e641] [cursor=pointer]:
+          - /url: https://qwikpdf.com/fill-pdf-forms.html
+          - img [ref=e642]
+          - text: Fill PDF Forms
+        - link "Sample PDF (B&W)" [ref=e646] [cursor=pointer]:
+          - /url: https://qwikpdf.com/sample-pdf-black-and-white-text.html
+          - img [ref=e647]
+          - text: Sample PDF (B&W)
+        - link "Sample PDF Colored" [ref=e650] [cursor=pointer]:
+          - /url: https://qwikpdf.com/sample-pdf-by-page-count-colored-text.html
+          - img [ref=e651]
+          - text: Sample PDF Colored
+        - link "Sample PDF (Text+Images)" [ref=e656] [cursor=pointer]:
+          - /url: https://qwikpdf.com/sample-pdf-by-page-count-text-and-images.html
+          - img [ref=e657]
+          - text: Sample PDF (Text+Images)
+        - link "Sample PDF by Pages" [ref=e661] [cursor=pointer]:
+          - /url: https://qwikpdf.com/sample-pdf-by-page-count.html
+          - img [ref=e662]
+          - text: Sample PDF by Pages
+        - link "Colorful Sample PDF" [ref=e666] [cursor=pointer]:
+          - /url: https://qwikpdf.com/sample-pdf-colorful-text.html
+          - img [ref=e667]
+          - text: Colorful Sample PDF
+        - link "Sample PDF Download" [ref=e673] [cursor=pointer]:
+          - /url: https://qwikpdf.com/sample-pdf-files-download.html
+          - img [ref=e674]
+          - text: Sample PDF Download
+        - link "Sample PDF (Images Only)" [ref=e677] [cursor=pointer]:
+          - /url: https://qwikpdf.com/sample-pdf-images-only.html
+          - img [ref=e678]
+          - text: Sample PDF (Images Only)
+        - link "Check PDF Details" [ref=e682] [cursor=pointer]:
+          - /url: https://qwikpdf.com/check-pdf-details-online.html
+          - img [ref=e683]
+          - text: Check PDF Details
+        - link "Count PDF Pages" [ref=e687] [cursor=pointer]:
+          - /url: https://qwikpdf.com/count-pdf-pages-online.html
+          - img [ref=e688]
+          - text: Count PDF Pages
+        - link "Sample PDF Mixed" [ref=e692] [cursor=pointer]:
+          - /url: https://qwikpdf.com/sample-pdf-with-text-and-images.html
+          - img [ref=e693]
+          - text: Sample PDF Mixed
+        - link "Duplicate PDF Pages" [ref=e697] [cursor=pointer]:
+          - /url: https://qwikpdf.com/duplicate-pdf-pages.html
+          - img [ref=e698]
+          - text: Duplicate PDF Pages
+  - contentinfo [ref=e702]:
+    - paragraph [ref=e703]:
+      - text: © 2025 QwikPDF · Sample PDF Files with Text & Images ·
+      - link "Privacy Policy" [ref=e704] [cursor=pointer]:
+        - /url: "#"
+      - text: ·
+      - link "Terms of Service" [ref=e705] [cursor=pointer]:
+        - /url: "#"
+    - paragraph [ref=e706]: 🔒 All PDF files are generated locally in your browser. No data is sent to any server.
+```
+
+# Test source
+
+```ts
+  1  | import {test, expect} from "@playwright/test"
+  2  | 
+  3  | test("File Upload test",async({page})=>{
+  4  | 
+  5  |     await page.goto("https://omayo.blogspot.com/")
+  6  | 
+  7  |     await page.locator("//input[@id='uploadfile']").setInputFiles("C:/Users/Vetrivel B/Downloads/1_Control_Flow_Statements (1).pdf")
+  8  | 
+  9  |     const filePath=await page.locator("//input[@id='uploadfile']").inputValue();
+  10 | 
+  11 |     expect(filePath).toContain("1_Control_Flow_Statements (1).pdf");
+  12 |     
+  13 | })
+  14 | 
+  15 | 
+  16 | test("Download Pdf",async({page})=>{
+  17 | 
+  18 |     await page.goto("https://qwikpdf.com/sample-pdf-with-text-and-images.html")
+  19 | 
+> 20 |     await page.click("//button[@id='btn-size-100kb']")
+     |                ^ Error: page.click: Test timeout of 30000ms exceeded.
+  21 | 
+  22 |     const promise=await page.waitForEvent("download")
+  23 | 
+  24 |     console.log((await promise).suggestedFilename())
+  25 | })
+```

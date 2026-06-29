@@ -114,7 +114,7 @@ test("Task 6 - Select Drop Down",async({page})=>{
     
 })
 
-test("Task 7 - Select Drop Down",async({page})=>{
+test("Task 7 - Multi Select on Drop Down",async({page})=>{
     await page.goto("https://www.testmuai.com/selenium-playground/select-dropdown-demo/")
     
     await page.waitForTimeout(10000)

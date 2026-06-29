@@ -1,0 +1,770 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: filemanipulation.test.ts >> Download Pdf
+- Location: tests\filemanipulation.test.ts:16:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: page.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('//span[normalize-space()=\'Test PDF Document Download\']')
+    - locator resolved to <span class="r5zwp6-2 iEhkCK">Test PDF Document Download</span>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - performing click action
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - generic [ref=e6]:
+      - link "Smallpdf logo Smallpdf logo" [ref=e8] [cursor=pointer]:
+        - /url: /
+        - img "Smallpdf logo" [ref=e9]
+        - img "Smallpdf logo" [ref=e11]
+      - generic [ref=e12]:
+        - generic [ref=e15] [cursor=pointer]:
+          - img [ref=e17]
+          - text: Tools
+          - img [ref=e20]
+        - list [ref=e23]:
+          - listitem [ref=e24]:
+            - link "Compress" [ref=e25] [cursor=pointer]:
+              - /url: /compress-pdf
+          - listitem [ref=e26]:
+            - link "Convert" [ref=e27] [cursor=pointer]:
+              - /url: /pdf-converter
+          - listitem [ref=e28]:
+            - link "Merge" [ref=e29] [cursor=pointer]:
+              - /url: /merge-pdf
+          - listitem [ref=e30]:
+            - link "Edit" [ref=e31] [cursor=pointer]:
+              - /url: /edit-pdf
+          - listitem [ref=e32]:
+            - link "Sign" [ref=e33] [cursor=pointer]:
+              - /url: /sign-pdf
+          - listitem [ref=e34]:
+            - link "AI PDF" [ref=e35] [cursor=pointer]:
+              - /url: /ai-pdf
+      - list [ref=e38]:
+        - listitem [ref=e39]:
+          - link "Pricing" [ref=e40] [cursor=pointer]:
+            - /url: /pricing
+            - generic [ref=e41]: Pricing
+        - listitem [ref=e42]:
+          - link "Teams" [ref=e43] [cursor=pointer]:
+            - /url: /teams
+            - generic [ref=e44]: Teams
+      - generic [ref=e47]:
+        - button "Log In" [ref=e49] [cursor=pointer]
+        - button "Get Pro" [ref=e51] [cursor=pointer]:
+          - generic [ref=e53]: Get Pro
+    - list [ref=e57]:
+      - listitem [ref=e58]:
+        - link "Home" [ref=e59] [cursor=pointer]:
+          - /url: https://smallpdf.com/
+      - listitem [ref=e60]:
+        - generic [ref=e61]: ›
+        - link "Edit PDF" [ref=e62] [cursor=pointer]:
+          - /url: https://smallpdf.com/edit-pdf
+      - listitem [ref=e63]:
+        - generic [ref=e64]: ›
+        - link "Templates" [ref=e65] [cursor=pointer]:
+          - /url: https://smallpdf.com/blog?type=templates&tool=edit-pdf
+      - listitem [ref=e66]:
+        - generic [ref=e67]: ›
+        - generic [ref=e68]: Sample PDF—Download Free Test PDF
+    - article [ref=e69]:
+      - generic [ref=e70]:
+        - img "sample pdf" [ref=e73]
+        - generic [ref=e74]:
+          - link "Templates" [ref=e76] [cursor=pointer]:
+            - /url: /blog?type=templates
+          - heading "Sample PDF—Download Free Test PDF" [level=1] [ref=e79]
+          - paragraph [ref=e82]:
+            - generic [ref=e83]:
+              - time [ref=e84]: January 2, 2026
+              - text: by Hung Nguyen
+      - generic [ref=e85]:
+        - link "Share on Facebook" [ref=e87] [cursor=pointer]:
+          - /url: https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsmallpdf.com%2Fblog%2Fsample-pdf&title=Sample%20PDF%E2%80%94Download%20Free%20Test%20PDF
+          - img [ref=e90]
+        - link "Share on X" [ref=e93] [cursor=pointer]:
+          - /url: https://twitter.com/intent/tweet?url=https%3A%2F%2Fsmallpdf.com%2Fblog%2Fsample-pdf&text=Sample%20PDF%E2%80%94Download%20Free%20Test%20PDF&via=smallpdf&hashtags=smallpdf
+          - img [ref=e96]
+        - link "Share on LinkedIn" [ref=e100] [cursor=pointer]:
+          - /url: https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsmallpdf.com%2Fblog%2Fsample-pdf&title=Sample%20PDF%E2%80%94Download%20Free%20Test%20PDF
+          - img [ref=e103]
+        - link "Share on WhatsApp" [ref=e106] [cursor=pointer]:
+          - /url: whatsapp://send?text=Sample%20PDF%E2%80%94Download%20Free%20Test%20PDF%20https%3A%2F%2Fsmallpdf.com%2Fblog%2Fsample-pdf
+          - img [ref=e109]
+      - generic [ref=e115]:
+        - text: You can also read this article in
+        - link "German" [ref=e116] [cursor=pointer]:
+          - /url: https://smallpdf.com/de/blog/beispiel-pdf
+        - text: ","
+        - link "Spanish" [ref=e117] [cursor=pointer]:
+          - /url: https://smallpdf.com/es/blog/descargar-documento-pdf
+        - text: ","
+        - link "French" [ref=e118] [cursor=pointer]:
+          - /url: https://smallpdf.com/fr/blog/fichier-pdf
+        - text: ","
+        - link "Indonesian" [ref=e119] [cursor=pointer]:
+          - /url: https://smallpdf.com/id/blog/sampel-pdf
+        - text: ","
+        - link "Italian" [ref=e120] [cursor=pointer]:
+          - /url: https://smallpdf.com/it/blog/esempio-di-file-pdf-scarica-un-pdf-di-prova
+        - text: and
+        - link "Portuguese" [ref=e121] [cursor=pointer]:
+          - /url: https://smallpdf.com/pt/blog/documento-pdf
+        - text: .
+      - paragraph [ref=e125]:
+        - paragraph [ref=e127]: Need a free PDF to experiment with? Download our one-page test PDF and try Smallpdf features without risking a real contract, invoice, or form.
+      - paragraph [ref=e133]: Get a test PDF document download you can trust. Grab our one-page sample and try edits, conversions, and signatures without touching real files.
+      - link "Test PDF Document Download" [ref=e135] [cursor=pointer]:
+        - /url: https://smallpdf.com/handle-widget#url=https://assets.ctfassets.net/l3l0sjr15nav/29D2yYGKlHNm0fB2YM1uW4/8e638080a0603252b1a50f35ae8762fd/Get_Started_With_Smallpdf.pdf
+        - generic [ref=e137]: Test PDF Document Download
+      - generic [ref=e142]:
+        - heading "Free Test PDF Document Download" [level=2] [ref=e143]
+        - paragraph [ref=e144]: If you’re about to compress a client file, convert a contract to Word, or test a signature workflow, it helps to have a throwaway PDF first. That’s the point of this page.
+        - paragraph [ref=e145]: Get started right away with our optimized test PDF. We’ve compressed this file to make sure it’s as easy as possible for you to load and save.
+        - paragraph [ref=e146]:
+          - link "Test PDF Document Download" [ref=e147] [cursor=pointer]:
+            - /url: /handle-widget#url=https://assets.ctfassets.net/l3l0sjr15nav/29D2yYGKlHNm0fB2YM1uW4/8e638080a0603252b1a50f35ae8762fd/Get_Started_With_Smallpdf.pdf
+          - text: (one-page PDF)
+        - paragraph [ref=e148]: You’ll also see how fast uploads feel, how conversions handle fonts, and how edited PDFs look on different devices.
+        - heading "What’s Included in the Sample PDF" [level=2] [ref=e149]
+        - paragraph [ref=e150]: This sample is built for quick checks, not reading.
+        - list [ref=e151]:
+          - listitem [ref=e152]: Single-page layout, so tests stay fast.
+          - listitem [ref=e153]: Optimized file size around 50 KB for instant downloads.
+          - listitem [ref=e154]: No password, no restrictions, no locked layers.
+          - listitem [ref=e155]: Works in standard PDF readers and modern browsers.
+      - generic [ref=e159]:
+        - link "free-sample-pdf-to-download" [ref=e161] [cursor=pointer]:
+          - /url: https://smallpdf.com/handle-widget#url=https://assets.ctfassets.net/l3l0sjr15nav/29D2yYGKlHNm0fB2YM1uW4/8e638080a0603252b1a50f35ae8762fd/Get_Started_With_Smallpdf.pdf
+          - img "free-sample-pdf-to-download" [ref=e162]
+        - paragraph [ref=e165]: A picture of what the sample PDF looks like
+      - generic [ref=e170]:
+        - heading "A Simple Smallpdf Workflow to Test With This File" [level=2] [ref=e171]
+        - paragraph [ref=e172]: "To keep things practical, we recommend one clean workflow you can repeat anytime:"
+        - list [ref=e173]:
+          - listitem [ref=e174]: Download the sample.
+          - listitem [ref=e175]: Run one task.
+          - listitem [ref=e176]: Download and check the result.
+          - listitem [ref=e177]: Repeat with a new feature.
+        - paragraph [ref=e178]: This lets you spot changes in layout, file size, and text quality without guessing what caused the difference.
+        - 'heading "How To Test a PDF With Smallpdf: Step-by-Step Guide" [level=2] [ref=e179]'
+        - 'heading "Step 1: Download the Sample PDF" [level=3] [ref=e180]'
+        - paragraph [ref=e181]:
+          - text: Get the
+          - link "Test PDF Document Download" [ref=e182] [cursor=pointer]:
+            - /url: /handle-widget#url=https://assets.ctfassets.net/l3l0sjr15nav/29D2yYGKlHNm0fB2YM1uW4/8e638080a0603252b1a50f35ae8762fd/Get_Started_With_Smallpdf.pdf
+          - text: . Save it to your device so you can re-upload it any time.
+        - paragraph [ref=e183]: If you prefer cloud storage, you can keep it in Google Drive, Dropbox, or OneDrive and pull it in from there when you’re testing.
+        - 'heading "Step 2: Test Compression With Smallpdf Compress PDF" [level=3] [ref=e184]'
+        - paragraph [ref=e185]:
+          - text: Open
+          - link "Compress PDF" [ref=e186] [cursor=pointer]:
+            - /url: /compress-pdf
+          - text: ", then upload your sample from your device or your cloud storage. Choose your compression level, then click “Compress.”"
+        - paragraph [ref=e187]: Download the result and compare the size and page clarity. On a tiny file like this, the difference may be small, and that’s normal.
+        - 'heading "Step 3: Test Conversion With Smallpdf PDF to Word" [level=3] [ref=e188]'
+        - paragraph [ref=e189]:
+          - text: Next, open the
+          - link "PDF to Word" [ref=e190] [cursor=pointer]:
+            - /url: /pdf-to-word
+          - text: and upload the same sample PDF. Convert it, then download the DOCX file.
+        - paragraph [ref=e191]: Open the Word file and check spacing, font rendering, and line breaks. This is the fastest way to see how a conversion behaves before you try it on a contract or report.
+        - 'heading "Step 4: Test Edits With Smallpdf Edit PDF" [level=3] [ref=e192]'
+        - paragraph [ref=e193]:
+          - text: Open
+          - link "Edit PDF" [ref=e194] [cursor=pointer]:
+            - /url: /edit-pdf
+          - text: ", upload the sample, then add one or two edits. Try"
+          - link "adding a text box" [ref=e195] [cursor=pointer]:
+            - /url: /blog/how-to-write-on-a-pdf
+          - text: ","
+          - link "highlighting a line" [ref=e196] [cursor=pointer]:
+            - /url: /blog/how-to-highlight-in-pdf
+          - text: ", or"
+          - link "placing a small image" [ref=e197] [cursor=pointer]:
+            - /url: /blog/insert-image-into-pdf
+          - text: .
+        - paragraph [ref=e198]: When you download the updated PDF, open it in a different viewer too, like your browser and a desktop reader. That’s how you catch display differences early.
+        - 'heading "Step 5: Test Signing With Smallpdf Sign PDF" [level=3] [ref=e199]'
+        - paragraph [ref=e200]:
+          - text: Open the
+          - link "Sign PDF" [ref=e201] [cursor=pointer]:
+            - /url: /sign-pdf
+          - text: ", upload the sample, then"
+          - link "add a signature and date" [ref=e202] [cursor=pointer]:
+            - /url: /blog/how-to-electronically-sign-a-pdf
+          - text: . Place it near the bottom of the page so you can judge alignment and spacing.
+        - paragraph [ref=e203]: Download the signed file and zoom in to confirm it looks sharp and professional.
+        - 'heading "Step 6: Share the Result the Way You Normally Would" [level=3] [ref=e204]'
+        - paragraph [ref=e205]:
+          - text: If your workflow includes sharing,
+          - link "generate a share link" [ref=e206] [cursor=pointer]:
+            - /url: /blog/ways-to-create-a-link-to-a-pdf
+          - text: or send the file to a colleague. Open it on a phone and a laptop to confirm the PDF still looks right.
+        - paragraph [ref=e207]: This step matters most for files that will be reviewed on mobile.
+        - heading "Common Use Cases for Test PDFs" [level=2] [ref=e208]
+        - paragraph [ref=e209]: Test PDFs aren’t just for curiosity. They help you validate a workflow before you bring real data into it.
+        - paragraph [ref=e210]: Software and web teams use a small PDF like this to confirm upload handling, processing speed, and download behavior. It’s also handy for checking how different browsers handle the same file.
+        - paragraph [ref=e211]: Training and education teams use test PDFs for live demos, since there’s no sensitive content on-screen. It keeps workshops smooth, especially when you’re teaching conversion or signing steps.
+        - paragraph [ref=e212]: QA and IT teams use sample PDFs to confirm consistency across devices, PDF viewers, and internal systems. If a converted file breaks a layout, a test PDF helps you isolate the issue faster.
+        - paragraph [ref=e213]: Operations teams use a sample file to confirm standard steps, like compressing a PDF under an upload limit, then sharing it for approval. It’s a clean way to document a process.
+        - 'heading "Mini Case Study: A Repeatable Pre-Flight Check for Important PDFs" [level=2] [ref=e214]'
+        - paragraph [ref=e215]: Here’s an example workflow you can copy when you’re about to process a high-stakes document.
+        - paragraph [ref=e216]: An HR coordinator needs to send an offer letter as a signed PDF. Before touching the real letter, they run the sample PDF through the same steps. They compress it to check file size behavior, convert it to Word to confirm the formatting stays stable, and sign it to confirm placement looks right.
+        - paragraph [ref=e217]: Once the sample passes, they repeat the exact same sequence on the real offer letter. The goal isn’t perfection. It’s predictability.
+        - heading "Why Start With a Test PDF First" [level=2] [ref=e218]
+        - paragraph [ref=e219]: A test file gives you two big advantages.
+        - paragraph [ref=e220]: First, it removes risk. You can try conversions, edits, and signatures without worrying about overwriting something important.
+        - paragraph [ref=e221]: Second, it makes issues obvious. If text spacing changes after conversion, or a signature looks blurry after exporting, you’ll see it right away on a safe file and adjust your steps.
+        - paragraph [ref=e222]: This is also a smart way to check real-world details, like file size limits in a portal, how a PDF prints, or how it looks inside a specific PDF viewer.
+        - heading "How To Create Your Own Test PDF Document Download" [level=2] [ref=e223]
+        - paragraph [ref=e224]: Sometimes you need a test file that matches your exact layout or font setup. Here are reliable ways to make one.
+        - 'heading "Step 1: Save a Webpage as a PDF" [level=3] [ref=e225]'
+        - paragraph [ref=e226]: Open the page you want, then press Ctrl + P on Windows or Command + P on Mac. Change the destination to “Save as PDF,” then save it.
+        - paragraph [ref=e227]: This is great for layout testing since webpages often include mixed text and images.
+        - 'heading "Step 2: Export a PDF From Microsoft Word" [level=3] [ref=e228]'
+        - paragraph [ref=e229]: Create a short document with a title, a paragraph, and a small image. Then go to “File” > “Export” and choose “Create PDF/XPS” if you see it.
+        - paragraph [ref=e230]: This method helps you test how Word formatting survives the PDF export.
+        - 'heading "Step 3: Download a PDF From Google Docs" [level=3] [ref=e231]'
+        - paragraph [ref=e232]: Open Google Docs, add a few lines of text, then go to “File” > “Download” > “PDF Document (.pdf).”
+        - paragraph [ref=e233]: This is useful when you want a quick, clean PDF without desktop software.
+        - 'heading "Step 4: Build a Layout Test With Placeholder Text" [level=3] [ref=e234]'
+        - paragraph [ref=e235]: Create a short page with headers, short paragraphs, and a table. Export it as a PDF, then use it to test conversions and edits on structured content.
+        - paragraph [ref=e236]: This is the closest match to invoices, forms, and internal reports.
+        - heading "More Sample PDFs You Can Try" [level=2] [ref=e237]
+        - paragraph [ref=e238]: If you’re testing something specific, a one-page file might not be enough. Different PDFs stress different features.
+        - paragraph [ref=e239]:
+          - text: A
+          - strong [ref=e240]: multi-page sample
+          - text: is best for split and merge checks, page thumbnails, and performance testing. It’s also the right option when you want to see noticeable compression changes.
+        - paragraph [ref=e241]:
+          - text: A
+          - strong [ref=e242]: form-style sample
+          - text: helps you practice filling fields and checking how form elements behave after exporting or sharing. If you often deal with onboarding paperwork, this is the most realistic test.
+        - paragraph [ref=e243]:
+          - text: A
+          - strong [ref=e244]: layout-heavy sample
+          - text: ", like an invoice format, helps you test tables, spacing, and alignment. It’s the fastest way to see if a conversion keeps the structure intact."
+        - heading "File Size and Optimization Notes" [level=2] [ref=e245]
+        - paragraph [ref=e246]: Our main sample is kept small so you can download it instantly and start testing right away.
+        - paragraph [ref=e247]: If your goal is compression testing, pick a larger PDF. Compression results are easier to measure when a file has multiple pages, high-resolution images, or heavy embedded fonts.
+        - paragraph [ref=e248]: As a rule of thumb, use the one-page sample to test workflow and UI behavior. Use multi-page samples to test file size reduction and performance.
+        - heading "Security and Privacy When You Use Smallpdf" [level=2] [ref=e249]
+        - paragraph [ref=e250]: Even if you’re testing with a sample, your files should still be handled responsibly.
+        - paragraph [ref=e251]:
+          - text: Smallpdf
+          - link "protects files" [ref=e252] [cursor=pointer]:
+            - /url: /trust-center
+          - text: with TLS encryption during upload and processing. Files are automatically deleted after a short period, and our systems are designed around secure handling and privacy standards, including ISO 27001 and GDPR compliance.
+        - paragraph [ref=e253]:
+          - text: If you want the details, you can review our
+          - link "Trust Center" [ref=e254] [cursor=pointer]:
+            - /url: /trust-center
+          - text: for the full breakdown of how processing and retention work.
+        - heading "Troubleshooting Download and Viewing Issues" [level=2] [ref=e255]
+        - paragraph [ref=e256]:
+          - text: If the download doesn’t start, check your browser’s pop-up or download settings and allow downloads from
+          - link "smallpdf.com" [ref=e257] [cursor=pointer]:
+            - /url: /
+          - text: . Some browser extensions can block file downloads, too, so it’s worth disabling them for a quick test.
+        - paragraph [ref=e258]:
+          - text: If the PDF won’t open after downloading, try opening it directly in your browser first, then try a different
+          - link "PDF reader" [ref=e259] [cursor=pointer]:
+            - /url: /pdf-reader
+          - text: . Outdated readers can cause display problems, especially with fonts.
+        - paragraph [ref=e260]: If the file looks corrupted, clear your browser cache and download it again. Cached files sometimes create odd viewing issues that disappear on a fresh download.
+        - heading "Try Your Next PDF Task With Confidence" [level=2] [ref=e261]
+        - paragraph [ref=e262]: Once you’ve run this sample through your usual workflow, you’ll know exactly what to expect on a real file.
+        - paragraph [ref=e263]: Download the sample again anytime, then repeat the same steps when you need a quick pre-flight check before an important conversion, edit, or signature.
+        - paragraph [ref=e264]:
+          - text: Ready to unlock all features?
+          - link "Start your free trial" [ref=e265] [cursor=pointer]:
+            - /url: /pricing
+          - text: to access all Smallpdf tools, no credit card needed.
+      - link "Download Test PDF Document" [ref=e267] [cursor=pointer]:
+        - /url: https://smallpdf.com/handle-widget#url=https://assets.ctfassets.net/l3l0sjr15nav/29D2yYGKlHNm0fB2YM1uW4/8e638080a0603252b1a50f35ae8762fd/Get_Started_With_Smallpdf.pdf
+        - generic [ref=e269]: Download Test PDF Document
+      - generic [ref=e274]:
+        - heading "Frequently Asked Questions" [level=2] [ref=e275]
+        - heading "What is a PDF and what does a sample PDF include?" [level=3] [ref=e276]
+        - paragraph [ref=e277]: A PDF (Portable Document Format) is a file format that preserves document formatting across all devices. Our sample PDF includes text, basic formatting, and standard page layout. Perfect for testing PDF tools.
+        - heading "Can I download sample PDFs for free?" [level=3] [ref=e278]
+        - paragraph [ref=e279]: Yes! All our sample PDFs are 100% free to download and use. No sign-up required.
+        - heading "What file size should a sample PDF be?" [level=3] [ref=e280]
+        - paragraph [ref=e281]: Sample PDFs typically range from 50KB to 500KB. Ours is optimized at 50KB for quick downloads while maintaining quality.
+        - paragraph [ref=e282]: Our new multi-page, image-heavy sample PDF is intentionally larger. This lets you test how compression affects bulkier files.
+        - paragraph [ref=e283]: You can see how much smaller you can make it, how image quality changes, and how quickly the tool processes bigger PDFs.
+        - heading "Can I share the sample PDF with others?" [level=3] [ref=e284]
+        - paragraph [ref=e285]: Absolutely. Feel free to send or embed it in tutorials, demos, or classroom examples. The file is fully open and safe to distribute.
+        - heading "Is the sample PDF safe to open?" [level=3] [ref=e286]
+        - paragraph [ref=e287]: Yes. All files processed through Smallpdf are encrypted and deleted automatically after one hour. Learn more in our Trust Center.
+        - heading "How do I test PDF tools on mobile devices?" [level=3] [ref=e288]
+        - paragraph [ref=e289]: Download the Smallpdf mobile app for iOS or Android to test all our tools on your phone or tablet. The sample PDFs work perfectly on mobile, too.
+        - heading "Can I edit the sample PDF without signing up?" [level=3] [ref=e290]
+        - paragraph [ref=e291]: Yes, but free users can perform up to two tasks per day. For unlimited access to all editing features, try our 7-day free trial.
+        - heading "What’s the difference between test PDFs and production PDFs?" [level=3] [ref=e292]
+        - paragraph [ref=e293]: Test PDFs are designed for experimentation and learning. They‘re simple, unrestricted, and safe to modify. Production PDFs contain your real work and often need security features like passwords or digital signatures.
+      - generic [ref=e294]:
+        - link "Share on Facebook" [ref=e296] [cursor=pointer]:
+          - /url: https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsmallpdf.com%2Fblog%2Fsample-pdf&title=Sample%20PDF%E2%80%94Download%20Free%20Test%20PDF
+          - img [ref=e299]
+        - link "Share on X" [ref=e302] [cursor=pointer]:
+          - /url: https://twitter.com/intent/tweet?url=https%3A%2F%2Fsmallpdf.com%2Fblog%2Fsample-pdf&text=Sample%20PDF%E2%80%94Download%20Free%20Test%20PDF&via=smallpdf&hashtags=smallpdf
+          - img [ref=e305]
+        - link "Share on LinkedIn" [ref=e309] [cursor=pointer]:
+          - /url: https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsmallpdf.com%2Fblog%2Fsample-pdf&title=Sample%20PDF%E2%80%94Download%20Free%20Test%20PDF
+          - img [ref=e312]
+        - link "Share on WhatsApp" [ref=e315] [cursor=pointer]:
+          - /url: whatsapp://send?text=Sample%20PDF%E2%80%94Download%20Free%20Test%20PDF%20https%3A%2F%2Fsmallpdf.com%2Fblog%2Fsample-pdf
+          - img [ref=e318]
+      - generic [ref=e324]:
+        - img "Hung Nguyen" [ref=e327]
+        - generic [ref=e328]:
+          - generic [ref=e329]: Hung Nguyen
+          - generic [ref=e330]:
+            - text: Senior Growth Marketing Manager
+            - generic [ref=e331]: "@Smallpdf"
+  - generic [ref=e332]:
+    - generic [ref=e335]:
+      - heading "Related articles" [level=2] [ref=e336]
+      - generic [ref=e337]:
+        - generic [ref=e339]:
+          - link [ref=e340] [cursor=pointer]:
+            - /url: https://smallpdf.com/blog/fake-files-at-work
+          - link "Productivity Guides" [ref=e344] [cursor=pointer]:
+            - /url: /blog?type=productivity
+            - generic [ref=e345]: Productivity Guides
+          - 'link "Trust Is the New Bottleneck at Work: Most Professionals Doubt the Files They Receive New research reveals how fabricated and edited files make “proof” a bottleneck, forcing teams to spend more time verifying than doing." [ref=e346] [cursor=pointer]':
+            - /url: https://smallpdf.com/blog/fake-files-at-work
+            - 'heading "Trust Is the New Bottleneck at Work: Most Professionals Doubt the Files They Receive" [level=3] [ref=e347]'
+            - paragraph [ref=e350]: New research reveals how fabricated and edited files make “proof” a bottleneck, forcing teams to spend more time verifying than doing.
+        - generic [ref=e352]:
+          - link [ref=e353] [cursor=pointer]:
+            - /url: https://smallpdf.com/blog/realtor-confidentiality
+          - link "The Business Blog" [ref=e357] [cursor=pointer]:
+            - /url: /blog?type=business
+            - generic [ref=e358]: The Business Blog
+          - 'link "Confidentiality in Real Estate: How Realtors Can Protect Client Data & Maintain Trust Understand realtor confidentiality, what information must stay private, and how to protect client data throughout real estate transactions." [ref=e359] [cursor=pointer]':
+            - /url: https://smallpdf.com/blog/realtor-confidentiality
+            - 'heading "Confidentiality in Real Estate: How Realtors Can Protect Client Data & Maintain Trust" [level=3] [ref=e360]'
+            - paragraph [ref=e363]: Understand realtor confidentiality, what information must stay private, and how to protect client data throughout real estate transactions.
+        - generic [ref=e365]:
+          - link [ref=e366] [cursor=pointer]:
+            - /url: https://smallpdf.com/blog/close-deals-faster-with-esign
+          - link "The Business Blog" [ref=e370] [cursor=pointer]:
+            - /url: /blog?type=business
+            - generic [ref=e371]: The Business Blog
+          - link "7 Reasons Sales Teams Close More Deals Faster With eSignatures See why sales teams close more deals when they use eSignatures, from faster approvals to fewer stalled contracts and cleaner handoffs." [ref=e372] [cursor=pointer]:
+            - /url: https://smallpdf.com/blog/close-deals-faster-with-esign
+            - heading "7 Reasons Sales Teams Close More Deals Faster With eSignatures" [level=3] [ref=e373]
+            - paragraph [ref=e376]: See why sales teams close more deals when they use eSignatures, from faster approvals to fewer stalled contracts and cleaner handoffs.
+      - link "Show more →" [ref=e378] [cursor=pointer]:
+        - /url: /blog?type=all
+    - contentinfo [ref=e379]:
+      - generic [ref=e380]:
+        - list [ref=e384]:
+          - listitem [ref=e385]:
+            - generic [ref=e386]: Compress
+            - list [ref=e387]:
+              - listitem [ref=e388]:
+                - link "Compress PDF" [ref=e389] [cursor=pointer]:
+                  - /url: /compress-pdf
+                - generic:
+                  - img
+            - generic [ref=e390]: Convert
+            - list [ref=e391]:
+              - listitem [ref=e392]:
+                - link "PDF Converter" [ref=e393] [cursor=pointer]:
+                  - /url: /pdf-converter
+                - generic:
+                  - img
+            - generic [ref=e394]: AI PDF
+            - list [ref=e395]:
+              - listitem [ref=e396]:
+                - link "AI PDF Assistant" [ref=e397] [cursor=pointer]:
+                  - /url: /ai-pdf
+                - generic:
+                  - img
+              - listitem [ref=e398]:
+                - link "Chat with PDF" [ref=e399] [cursor=pointer]:
+                  - /url: /chat-pdf
+                - generic:
+                  - img
+              - listitem [ref=e400]:
+                - link "AI PDF Summarizer" [ref=e401] [cursor=pointer]:
+                  - /url: /pdf-summarizer
+                - generic:
+                  - img
+              - listitem [ref=e402]:
+                - link "Translate PDF" [ref=e403] [cursor=pointer]:
+                  - /url: /translate-pdf
+                - generic:
+                  - img
+              - listitem [ref=e404]:
+                - link "AI Question Generator" [ref=e405] [cursor=pointer]:
+                  - /url: /question-generator
+                - generic:
+                  - img
+          - listitem [ref=e406]:
+            - generic [ref=e407]: Organize
+            - list [ref=e408]:
+              - listitem [ref=e409]:
+                - link "Merge PDF" [ref=e410] [cursor=pointer]:
+                  - /url: /merge-pdf
+                - generic:
+                  - img
+              - listitem [ref=e411]:
+                - link "Split PDF" [ref=e412] [cursor=pointer]:
+                  - /url: /split-pdf
+                - generic:
+                  - img
+              - listitem [ref=e413]:
+                - link "Rotate PDF" [ref=e414] [cursor=pointer]:
+                  - /url: /rotate-pdf
+                - generic:
+                  - img
+              - listitem [ref=e415]:
+                - link "Delete PDF Pages" [ref=e416] [cursor=pointer]:
+                  - /url: /delete-pages-from-pdf
+                - generic:
+                  - img
+              - listitem [ref=e417]:
+                - link "Extract PDF Pages" [ref=e418] [cursor=pointer]:
+                  - /url: /extract-pdf-pages
+                - generic:
+                  - img
+              - listitem [ref=e419]:
+                - link "Organize PDF" [ref=e420] [cursor=pointer]:
+                  - /url: /organize-pdf
+                - generic:
+                  - img
+          - listitem [ref=e421]:
+            - generic [ref=e422]: View & Edit
+            - list [ref=e423]:
+              - listitem [ref=e424]:
+                - link "Edit PDF" [ref=e425] [cursor=pointer]:
+                  - /url: /edit-pdf
+                - generic:
+                  - img
+              - listitem [ref=e426]:
+                - link "PDF Annotator" [ref=e427] [cursor=pointer]:
+                  - /url: /pdf-annotator
+                - generic:
+                  - img
+              - listitem [ref=e428]:
+                - link "PDF Reader" [ref=e429] [cursor=pointer]:
+                  - /url: /pdf-reader
+                - generic:
+                  - img
+              - listitem [ref=e430]:
+                - link "Number Pages" [ref=e431] [cursor=pointer]:
+                  - /url: /add-page-numbers-to-pdf
+                - generic:
+                  - img
+              - listitem [ref=e432]:
+                - link "Crop PDF" [ref=e433] [cursor=pointer]:
+                  - /url: /crop-pdf
+                - generic:
+                  - img
+              - listitem [ref=e434]:
+                - link "Redact PDF" [ref=e435] [cursor=pointer]:
+                  - /url: /redact-pdf
+                - generic:
+                  - img
+              - listitem [ref=e436]:
+                - link "Watermark PDF" [ref=e437] [cursor=pointer]:
+                  - /url: /watermark-pdf
+                - generic:
+                  - img
+              - listitem [ref=e438]:
+                - link "PDF Form Filler" [ref=e439] [cursor=pointer]:
+                  - /url: /pdf-form-filler
+                - generic:
+                  - img
+              - listitem [ref=e440]:
+                - link "Share PDF" [ref=e441] [cursor=pointer]:
+                  - /url: /share-document
+                - generic:
+                  - img
+          - listitem [ref=e442]:
+            - generic [ref=e443]: Convert from PDF
+            - list [ref=e444]:
+              - listitem [ref=e445]:
+                - link "PDF to Word" [ref=e446] [cursor=pointer]:
+                  - /url: /pdf-to-word
+                - generic:
+                  - img
+              - listitem [ref=e447]:
+                - link "PDF to Excel" [ref=e448] [cursor=pointer]:
+                  - /url: /pdf-to-excel
+                - generic:
+                  - img
+              - listitem [ref=e449]:
+                - link "PDF to PPT" [ref=e450] [cursor=pointer]:
+                  - /url: /pdf-to-ppt
+                - generic:
+                  - img
+              - listitem [ref=e451]:
+                - link "PDF to JPG" [ref=e452] [cursor=pointer]:
+                  - /url: /pdf-to-jpg
+                - generic:
+                  - img
+          - listitem [ref=e453]:
+            - generic [ref=e454]: Convert to PDF
+            - list [ref=e455]:
+              - listitem [ref=e456]:
+                - link "Word to PDF" [ref=e457] [cursor=pointer]:
+                  - /url: /word-to-pdf
+                - generic:
+                  - img
+              - listitem [ref=e458]:
+                - link "Excel to PDF" [ref=e459] [cursor=pointer]:
+                  - /url: /excel-to-pdf
+                - generic:
+                  - img
+              - listitem [ref=e460]:
+                - link "PPT to PDF" [ref=e461] [cursor=pointer]:
+                  - /url: /ppt-to-pdf
+                - generic:
+                  - img
+              - listitem [ref=e462]:
+                - link "JPG to PDF" [ref=e463] [cursor=pointer]:
+                  - /url: /jpg-to-pdf
+                - generic:
+                  - img
+              - listitem [ref=e464]:
+                - link "PDF OCR" [ref=e465] [cursor=pointer]:
+                  - /url: /pdf-ocr
+                - generic:
+                  - img
+              - listitem [ref=e466]:
+                - link "HTML to PDF" [ref=e467] [cursor=pointer]:
+                  - /url: /html-to-pdf
+                - generic:
+                  - img
+              - listitem [ref=e468]:
+                - link "TXT to PDF" [ref=e469] [cursor=pointer]:
+                  - /url: /txt-to-pdf
+                - generic:
+                  - img
+              - listitem [ref=e470]:
+                - link "RTF to PDF" [ref=e471] [cursor=pointer]:
+                  - /url: /rtf-to-pdf
+                - generic:
+                  - img
+              - listitem [ref=e472]:
+                - link "ODT to PDF" [ref=e473] [cursor=pointer]:
+                  - /url: /odt-to-pdf
+                - generic:
+                  - img
+          - listitem [ref=e474]:
+            - generic [ref=e475]: Sign
+            - list [ref=e476]:
+              - listitem [ref=e477]:
+                - link "Sign PDF" [ref=e478] [cursor=pointer]:
+                  - /url: /sign-pdf
+                - generic:
+                  - img
+              - listitem [ref=e479]:
+                - link "Request Signatures (Sign.com)" [ref=e480] [cursor=pointer]:
+                  - /url: https://sign.com/smallpdf?utm_source=smallpdf&utm_medium=nav&utm_content=tool-list
+                - generic:
+                  - img
+            - generic [ref=e481]: More
+            - list [ref=e482]:
+              - listitem [ref=e483]:
+                - link "Unlock PDF" [ref=e484] [cursor=pointer]:
+                  - /url: /unlock-pdf
+                - generic:
+                  - img
+              - listitem [ref=e485]:
+                - link "Protect PDF" [ref=e486] [cursor=pointer]:
+                  - /url: /protect-pdf
+                - generic:
+                  - img
+              - listitem [ref=e487]:
+                - link "Flatten PDF" [ref=e488] [cursor=pointer]:
+                  - /url: /flatten-pdf
+                - generic:
+                  - img
+            - generic [ref=e489]: Scan
+            - list [ref=e490]:
+              - listitem [ref=e491]:
+                - link "PDF Scanner" [ref=e492] [cursor=pointer]:
+                  - /url: /pdf-scanner
+                - generic:
+                  - img
+        - generic [ref=e496]:
+          - generic [ref=e497]:
+            - generic [ref=e498]:
+              - img "Smallpdf logo" [ref=e499]
+              - img "Smallpdf logo" [ref=e500]
+            - generic [ref=e501]: We make PDF easy.
+          - navigation [ref=e502]:
+            - list [ref=e503]:
+              - listitem [ref=e504]:
+                - heading "Solutions" [level=2] [ref=e505]
+              - listitem [ref=e506]:
+                - link "Sales" [ref=e507] [cursor=pointer]:
+                  - /url: /teams/sales
+              - listitem [ref=e508]:
+                - link "Finance" [ref=e509] [cursor=pointer]:
+                  - /url: /teams/finance
+              - listitem [ref=e510]:
+                - link "Real Estate" [ref=e511] [cursor=pointer]:
+                  - /url: /teams/real-estate
+              - listitem [ref=e512]:
+                - link "Education" [ref=e513] [cursor=pointer]:
+                  - /url: /education
+            - list [ref=e514]:
+              - listitem [ref=e515]:
+                - heading "Company" [level=2] [ref=e516]
+              - listitem [ref=e517]:
+                - link "About" [ref=e518] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e519]:
+                - link "Help" [ref=e520] [cursor=pointer]:
+                  - /url: /support
+              - listitem [ref=e521]:
+                - link "Blog" [ref=e522] [cursor=pointer]:
+                  - /url: /blog
+              - listitem
+              - listitem [ref=e523]:
+                - link "PDF Statistics" [ref=e524] [cursor=pointer]:
+                  - /url: /pdf-statistics
+            - list [ref=e525]:
+              - listitem [ref=e526]:
+                - heading "Product" [level=2] [ref=e527]
+              - listitem [ref=e528]:
+                - link "Pricing" [ref=e530] [cursor=pointer]:
+                  - /url: /pricing
+              - listitem [ref=e531]:
+                - link "Teams" [ref=e533] [cursor=pointer]:
+                  - /url: /teams
+                  - generic [ref=e534]: Teams
+              - listitem [ref=e535]:
+                - link "Embed PDF" [ref=e536] [cursor=pointer]:
+                  - /url: /embed-pdf
+              - listitem [ref=e537]:
+                - link "Developers" [ref=e538] [cursor=pointer]:
+                  - /url: /library-detail
+              - listitem [ref=e539]:
+                - link "Sign.com" [ref=e540] [cursor=pointer]:
+                  - /url: https://sign.com/?utm_source=smallpdf&utm_medium=nav&utm_content=footer
+              - listitem [ref=e541]:
+                - link "Compare" [ref=e542] [cursor=pointer]:
+                  - /url: /compare/adobe-vs-foxit-vs-smallpdf
+              - listitem [ref=e543]:
+                - link "Accessible PDF" [ref=e544] [cursor=pointer]:
+                  - /url: /accessible-pdf
+            - list [ref=e545]:
+              - listitem [ref=e546]:
+                - heading "Apps" [level=2] [ref=e547]
+              - listitem [ref=e548]:
+                - link "Download Smallpdf" [ref=e549] [cursor=pointer]:
+                  - /url: /download
+              - listitem [ref=e550]:
+                - link "PDF Scanner" [ref=e551] [cursor=pointer]:
+                  - /url: /pdf-scanner
+              - listitem [ref=e552]:
+                - link "Windows App" [ref=e553] [cursor=pointer]:
+                  - /url: /download/windows#
+        - generic [ref=e557]:
+          - list [ref=e558]:
+            - listitem [ref=e559]:
+              - link "LinkedIn" [ref=e560] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/smallpdf
+                - img [ref=e562]
+            - listitem [ref=e564]:
+              - link "Facebook" [ref=e565] [cursor=pointer]:
+                - /url: https://www.facebook.com/smallpdf
+                - img [ref=e567]
+            - listitem [ref=e569]:
+              - link "YouTube" [ref=e570] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UCnBx8Kzxocmk44G_fRPfcPg
+                - img [ref=e572]
+            - listitem [ref=e574]:
+              - link "X" [ref=e575] [cursor=pointer]:
+                - /url: https://x.com/smallpdf
+                - img [ref=e577]
+          - generic [ref=e580]:
+            - link "Download for Windows" [ref=e582] [cursor=pointer]:
+              - /url: /download/windows#sd=1&trigger=footer
+              - img "Download for Windows" [ref=e583]
+            - link "Get it on Google Play" [ref=e585] [cursor=pointer]:
+              - /url: https://smallpdf-mobile.onelink.me/LaDa?pid=footer&af_xp=custom&af_dp=smallpdf%253A%252F%252F&af_web_dp=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.smallpdf.app.android&local_token=6d12de206b3117d85de0293b4b2807f2&deep_link_value=6d12de206b3117d85de0293b4b2807f2
+              - img "Get it on Google Play" [ref=e586]
+            - link "Download on the App Store" [ref=e588] [cursor=pointer]:
+              - /url: https://smallpdf-mobile.onelink.me/LaDa?pid=footer&af_xp=custom&af_dp=smallpdf%253A%252F%252F&af_web_dp=https%3A%2F%2Fapps.apple.com%2Fapp%2Fsmallpdf%2Fid1485259500&local_token=6d12de206b3117d85de0293b4b2807f2&deep_link_value=6d12de206b3117d85de0293b4b2807f2
+              - img "Download on the App Store" [ref=e589]
+      - generic [ref=e593]:
+        - generic [ref=e594]:
+          - text: © 2026 Smallpdf AG — Made with
+          - img [ref=e596]
+          - text: for the people of the internet.
+        - generic [ref=e598]:
+          - link "Privacy Notice" [ref=e600] [cursor=pointer]:
+            - /url: /privacy
+          - link "Terms & Conditions" [ref=e602] [cursor=pointer]:
+            - /url: /terms
+          - link "Imprint" [ref=e604] [cursor=pointer]:
+            - /url: /imprint
+          - button "Contact Us" [ref=e606] [cursor=pointer]
+```
+
+# Test source
+
+```ts
+  1  | import {test, expect} from "@playwright/test"
+  2  | 
+  3  | test("File Upload test",async({page})=>{
+  4  | 
+  5  |     await page.goto("https://omayo.blogspot.com/")
+  6  | 
+  7  |     await page.locator("//input[@id='uploadfile']").setInputFiles("C:/Users/Vetrivel B/Downloads/1_Control_Flow_Statements (1).pdf")
+  8  | 
+  9  |     const filePath=await page.locator("//input[@id='uploadfile']").inputValue();
+  10 | 
+  11 |     expect(filePath).toContain("1_Control_Flow_Statements (1).pdf");
+  12 |     
+  13 | })
+  14 | 
+  15 | 
+  16 | test("Download Pdf",async({page})=>{
+  17 | 
+  18 |     await page.goto("https://smallpdf.com/blog/sample-pdf")
+  19 | 
+> 20 |     await page.click("//span[normalize-space()='Test PDF Document Download']")
+     |                ^ Error: page.click: Test timeout of 30000ms exceeded.
+  21 | 
+  22 |     const promise=page.waitForEvent("download")
+  23 | 
+  24 |     await page.click("//span[normalize-space()='Test PDF Document Download']")
+  25 | 
+  26 |     console.log((await promise).suggestedFilename())
+  27 | })
+```
