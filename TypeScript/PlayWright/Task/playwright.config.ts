@@ -14,7 +14,7 @@ import { defineConfig, devices } from '@playwright/test';
 export default defineConfig({
   testDir: './tests',
   //repeatEach:3,
-  retries:2,
+  //retries:2,
   timeout:60000,
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -29,7 +29,7 @@ export default defineConfig({
   reporter: [
     ['html', {
       outputFolder: 'playwright-report',
-      open: 'never'
+      open: 'always'
     }],
 
     ['allure-playwright']
@@ -44,6 +44,10 @@ export default defineConfig({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'retain-on-failure',
     browserName:'firefox',
+
+    //actionTimeout: 10000,
+    //navigationTimeout: 30000,
+
     screenshot:'only-on-failure',
     video:'on'
 

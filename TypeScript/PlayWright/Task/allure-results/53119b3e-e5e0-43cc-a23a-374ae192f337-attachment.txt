@@ -1,0 +1,6 @@
+{
+  username: 'admin',
+  password: '',
+  expectedMessage: 'Please fill out Username and Password',
+  expectedResult: 'Failure'
+}

@@ -1,0 +1,25 @@
+[
+    {
+        "username" : "admin",
+        "password" : "admin",
+        "expectedMessage" : "Welcome",
+        "expectedResult" : "Success"
+    },
+
+    {
+        "username" : "invalidlogin@gmail",
+        "password" : "admin",
+        "expectedMessage" : "Wrong Email",
+        "expectedResult" : "Failure"
+    },
+
+    {
+        "username" : "admin",
+        "password" : "",
+        "expectedMessage" : "Please fill out Username and Password.",
+        "expectedResult" : "Failure"
+    }
+    
+
+
+]
