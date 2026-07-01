@@ -2,8 +2,6 @@ import fs from "fs"
 import path from "path"
 import { parse } from "csv-parse/sync"
 
-
-
 // export function readCSV<T>(fileName:string): T[] {
 
 //     const filepath = path.resolve(__dirname,`../test-data/${fileName}`);

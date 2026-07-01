@@ -1,0 +1,16 @@
+{
+  "valid": {
+    "email": "vetriTester@gmail.com",
+    "password": "Vetri@2005"
+  },
+
+  "invalidEmail": {
+    "email": "abcde",
+    "password": "Vetri@2005"
+  },
+  
+  "invalidPassword": {
+    "email": "vetriTester@gmail.com",
+    "password": "1234"
+  }
+}

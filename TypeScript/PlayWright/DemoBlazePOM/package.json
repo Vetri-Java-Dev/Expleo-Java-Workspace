@@ -1,9 +1,14 @@
 {
-  "name": "demoblazepom",
+  "name": "demoblazepom", 
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test:chrome": "cross-env ENV=chrome npx playwright test",
+    "test:firefox": "cross-env ENV=firefox npx playwright test",
+    "test:webkit": "cross-env ENV=webkit npx playwright test"
+  },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",

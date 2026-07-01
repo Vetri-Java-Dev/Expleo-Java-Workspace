@@ -8,7 +8,6 @@ interface LoginData {
     password: string;
 }
 
-
 const loginData=JsonData as LoginData[];
 
 const validUser=loginData.find(user => user.type === "valid");
@@ -28,7 +27,6 @@ test.describe("Login Test Group", () => {
     });
 
 
-
     test("Invalid Login", async ({ loginPage, homePage, page }) => {
 
         await homePage.navigateToHome();
@@ -39,7 +37,6 @@ test.describe("Login Test Group", () => {
             expect(dialog.message()).toBe("Wrong password.");
             await dialog.accept();
         });
-
 
         await loginPage.login(invalidUser!.username,invalidUser!.password);
 
