@@ -1,0 +1,365 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-test;valid-login",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Valid Login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1476420000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User clicks on login link",
+            "match": {
+              "location": "src\\test\\steps\\loginstep.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1901483199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User enters the email as \"dharshan10@gmail.com\"",
+            "match": {
+              "location": "src\\test\\steps\\loginstep.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60252599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User enters the password as \"1234\"",
+            "match": {
+              "location": "src\\test\\steps\\loginstep.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29398200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "User clicks login button",
+            "match": {
+              "location": "src\\test\\steps\\loginstep.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1496047400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "Login should be access",
+            "match": {
+              "location": "src\\test\\steps\\loginstep.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65890499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 648198300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-test;invalid-login",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Invalid Login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1517676600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User clicks on login link",
+            "match": {
+              "location": "src\\test\\steps\\loginstep.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1926590399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "User enters the email as \"bvetrivel@gmail.com\"",
+            "match": {
+              "location": "src\\test\\steps\\loginstep.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 122552999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "User enters the password as \"wrongpassword\"",
+            "match": {
+              "location": "src\\test\\steps\\loginstep.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42945299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "User clicks login button",
+            "match": {
+              "location": "src\\test\\steps\\loginstep.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1191839200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "error message should be displayed",
+            "match": {
+              "location": "src\\test\\steps\\loginstep.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 49268299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 820185800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-test",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login Test",
+    "tags": [],
+    "uri": "src\\test\\features\\login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "register-new-account;valid-registration",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Valid Registration",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1787249699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigates to the application",
+            "match": {
+              "location": "src\\test\\steps\\registerstep.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1024740900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "User clicks on register link",
+            "match": {
+              "location": "src\\test\\steps\\registerstep.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 683988499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User enters the first name as \"vetrivel\"",
+            "match": {
+              "location": "src\\test\\steps\\registerstep.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 246105299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "User enters the last name as \"b\"",
+            "match": {
+              "location": "src\\test\\steps\\registerstep.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37343300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "User enters the email as \"bvetrivel1428764@gmail.com\" for registration",
+            "match": {
+              "location": "src\\test\\steps\\registerstep.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38972699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "User enters the phone as \"7896541230\"",
+            "match": {
+              "location": "src\\test\\steps\\registerstep.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30579999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "User enters the password as \"Vetri@2005\" and confirmation password as \"Vetri@2005\"",
+            "match": {
+              "location": "src\\test\\steps\\registerstep.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43162000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "User accepts privacy policy",
+            "match": {
+              "location": "src\\test\\steps\\registerstep.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59655699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "User clicks register button",
+            "match": {
+              "location": "src\\test\\steps\\registerstep.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1324518799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "success message should be visible",
+            "match": {
+              "location": "src\\test\\steps\\registerstep.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53774400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 378238900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "register-new-account",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Register new Account",
+    "tags": [],
+    "uri": "src\\test\\features\\register.feature"
+  }
+]

@@ -1,4 +1,4 @@
-import readlineSync from "readline-sync";
+import readlineSync from "readline-sync"
 
 try{
     let num1=readlineSync.questionInt("Enter Number 1 : ")

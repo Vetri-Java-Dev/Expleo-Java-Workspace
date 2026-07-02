@@ -1,5 +1,6 @@
 import { test, expect } from "../fixtures/baseFixtures";
 
+
 test.describe("Search test @Regression", () => {
 
     test.beforeEach(async ({ page }) => {
@@ -8,21 +9,22 @@ test.describe("Search test @Regression", () => {
         });
     });
 
-    test("Valid search", async ({ searchPage, page }) => {
+    test("Valid search", async ({ searchPage }) => {
+
         const keyword="MacBook";
 
         await searchPage.searchProduct(keyword);
-        
-        await expect(searchPage.pageHeading).toBeVisible();
-
-        const resultsCount=await searchPage.getResultsCount();
-        expect(resultsCount).toBeGreaterThan(0);
 
         const products=await searchPage.getProductTitles();
-        console.log("Search results: ", products);
 
-        const hasMatch=products.some(title=>title.toLowerCase().includes(keyword.toLowerCase()));
-        expect(hasMatch).toBeTruthy();
+        let found=false;
+        for (const product of products) {
+            if (product.toLowerCase().includes(keyword.toLowerCase())) {
+                found=true;
+                break;
+            }
+        }
+        expect(found).toBeTruthy();
     });
 
 });

@@ -1,0 +1,50 @@
+{
+  
+  "name": "playwrightbdd",
+  
+  "version": "1.0.0",
+  
+  "description": "",
+  
+  "main": "index.js",
+  
+  "scripts": {
+  "test": "cucumber-js --parallel 4",
+  "posttest": "npx ts-node src/helper/report.mts",
+  "parallel": "cucumber-js src/test/features --parallel 2",
+  "ci": "cucumber-js src/test/features --format json:reports/report.json",
+  "chrome": "cross-env BROWSER=chromium cucumber-js",
+  "firefox": "cross-env BROWSER=firefox cucumber-js",
+  "webkit": "cross-env BROWSER=webkit cucumber-js"
+  },
+  
+  "keywords": [],
+  
+  "author": "",
+  
+  "license": "ISC",
+  
+  "type": "commonjs",
+  
+  "devDependencies": {
+  
+    
+  "@cucumber/cucumber": "^13.0.0",
+  
+    
+  "@playwright/test": "^1.61.1",
+  
+    
+  "@types/node": "^26.1.0",
+  
+    
+  "cross-env": "^10.1.0",
+  
+    
+  "multiple-cucumber-html-reporter": "^4.0.0",
+  
+    
+  "ts-node": "^10.9.2"
+  
+  }
+}

@@ -10,7 +10,7 @@ export interface User {
 }
 
 export function createUser(overrides: Partial<User> = {}): User {
-    const password = "Test@" + faker.number.int({ min: 1000, max: 9999 });
+    const password="Test@" + faker.number.int({ min: 1000, max: 9999 });
 
     return {
         firstName: faker.person.firstName(),
