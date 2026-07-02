@@ -4,7 +4,7 @@ report.generate({
     jsonDir: "./report",
     reportPath: "./report/detailed-html",
     reportName: "Playwright BDD Report",
-    pageTitle: "BookCart App test report",
+    pageTitle: "Tutorials Ninja Test",
     displayDuration: false,
     metadata: {
         browser: {
