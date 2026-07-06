@@ -4,6 +4,102 @@
     "elements": [
       {
         "description": "",
+        "id": "login;invalid-login",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Invalid login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1711192399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigates to application",
+            "match": {
+              "location": "src\\test\\steps\\login.step.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1961405100
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "standard_user"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "password",
+                      "wrongpassword"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 15,
+            "name": "User enters credentials",
+            "match": {
+              "location": "src\\test\\steps\\login.step.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 215412100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "User clicks login button",
+            "match": {
+              "location": "src\\test\\steps\\login.step.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 193675199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "error message should be displayed",
+            "match": {
+              "location": "src\\test\\steps\\login.step.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31066899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 811456799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
         "id": "login;valid-login",
         "keyword": "Scenario",
         "line": 6,
@@ -14,7 +110,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 809403799
+              "duration": 1706634600
             }
           },
           {
@@ -27,46 +123,63 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1115442599
+              "duration": 1924843400
             }
           },
           {
-            "arguments": [],
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "standard_user"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "password",
+                      "secret_sauce"
+                    ]
+                  }
+                ]
+              }
+            ],
             "keyword": "When ",
             "line": 7,
-            "name": "User enters \"valid\" credentials",
+            "name": "User enters credentials",
             "match": {
               "location": "src\\test\\steps\\login.step.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 117415800
+              "duration": 176174300
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 8,
+            "line": 11,
             "name": "User clicks login button",
             "match": {
-              "location": "src\\test\\steps\\login.step.ts:30"
+              "location": "src\\test\\steps\\login.step.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 116437600
+              "duration": 273423500
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 9,
+            "line": 12,
             "name": "User navigates to homepage",
             "match": {
-              "location": "src\\test\\steps\\login.step.ts:25"
+              "location": "src\\test\\steps\\login.step.ts:22"
             },
             "result": {
               "status": "passed",
-              "duration": 17722400
+              "duration": 40420600
             }
           },
           {
@@ -74,86 +187,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 423497999
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "login;invalid-login",
-        "keyword": "Scenario",
-        "line": 12,
-        "name": "Invalid login",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 843406100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "User navigates to application",
-            "match": {
-              "location": "src\\test\\steps\\login.step.ts:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1203837700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 13,
-            "name": "User enters \"invalid\" credentials",
-            "match": {
-              "location": "src\\test\\steps\\login.step.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 103362999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "User clicks login button",
-            "match": {
-              "location": "src\\test\\steps\\login.step.ts:30"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 154461300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 15,
-            "name": "error message should be displayed",
-            "match": {
-              "location": "src\\test\\steps\\login.step.ts:35"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 11463499
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 312882399
+              "duration": 627609800
             }
           }
         ],
@@ -173,17 +207,17 @@
     "elements": [
       {
         "description": "",
-        "id": "sorting;sort-products-by-name-a-to-z",
-        "keyword": "Scenario",
-        "line": 8,
-        "name": "Sort products by name A to Z",
+        "id": "sorting-products;sort-products",
+        "keyword": "Scenario Outline",
+        "line": 17,
+        "name": "Sort products",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 865788500
+              "duration": 1692422399
             }
           },
           {
@@ -196,59 +230,76 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1199098200
+              "duration": 2379626800
             }
           },
           {
-            "arguments": [],
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "standard_user"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "password",
+                      "secret_sauce"
+                    ]
+                  }
+                ]
+              }
+            ],
             "keyword": "And ",
             "line": 5,
-            "name": "User enters \"valid\" credentials",
+            "name": "User enters credentials",
             "match": {
               "location": "src\\test\\steps\\login.step.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 143010000
+              "duration": 222584399
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 6,
+            "line": 9,
             "name": "User clicks login button",
             "match": {
-              "location": "src\\test\\steps\\login.step.ts:30"
+              "location": "src\\test\\steps\\login.step.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 161286700
+              "duration": 189027899
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 9,
+            "line": 12,
             "name": "User sorts products by \"Name (A to Z)\"",
             "match": {
               "location": "src\\test\\steps\\sorting.step.ts:5"
             },
             "result": {
               "status": "passed",
-              "duration": 26191600
+              "duration": 65488400
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 10,
-            "name": "products should be sorted in \"ascending\" order by \"name\"",
+            "line": 13,
+            "name": "products should be sorted in \"ascending\" order by \"<name>\"",
             "match": {
               "location": "src\\test\\steps\\sorting.step.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 43086200
+              "duration": 6830799
             }
           },
           {
@@ -256,7 +307,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 356686700
+              "duration": 426627500
             }
           }
         ],
@@ -265,17 +316,17 @@
       },
       {
         "description": "",
-        "id": "sorting;sort-products-by-name-z-to-a",
-        "keyword": "Scenario",
-        "line": 12,
-        "name": "Sort products by name Z to A",
+        "id": "sorting-products;sort-products",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "Sort products",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 818475899
+              "duration": 1489981200
             }
           },
           {
@@ -288,59 +339,76 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1143088100
+              "duration": 1858688200
             }
           },
           {
-            "arguments": [],
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "standard_user"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "password",
+                      "secret_sauce"
+                    ]
+                  }
+                ]
+              }
+            ],
             "keyword": "And ",
             "line": 5,
-            "name": "User enters \"valid\" credentials",
+            "name": "User enters credentials",
             "match": {
               "location": "src\\test\\steps\\login.step.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 121730299
+              "duration": 107950600
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 6,
+            "line": 9,
             "name": "User clicks login button",
             "match": {
-              "location": "src\\test\\steps\\login.step.ts:30"
+              "location": "src\\test\\steps\\login.step.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 116614299
+              "duration": 147914099
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 13,
+            "line": 12,
             "name": "User sorts products by \"Name (Z to A)\"",
             "match": {
               "location": "src\\test\\steps\\sorting.step.ts:5"
             },
             "result": {
               "status": "passed",
-              "duration": 25804600
+              "duration": 213684799
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 14,
-            "name": "products should be sorted in \"descending\" order by \"name\"",
+            "line": 13,
+            "name": "products should be sorted in \"descending\" order by \"<name>\"",
             "match": {
               "location": "src\\test\\steps\\sorting.step.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 39758000
+              "duration": 5370899
             }
           },
           {
@@ -348,7 +416,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 303143200
+              "duration": 690196500
             }
           }
         ],
@@ -357,17 +425,17 @@
       },
       {
         "description": "",
-        "id": "sorting;sort-products-by-price-low-to-high",
-        "keyword": "Scenario",
-        "line": 16,
-        "name": "Sort products by price low to high",
+        "id": "sorting-products;sort-products",
+        "keyword": "Scenario Outline",
+        "line": 19,
+        "name": "Sort products",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 817541699
+              "duration": 1360801099
             }
           },
           {
@@ -380,59 +448,76 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3600123299
+              "duration": 1956082099
             }
           },
           {
-            "arguments": [],
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "standard_user"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "password",
+                      "secret_sauce"
+                    ]
+                  }
+                ]
+              }
+            ],
             "keyword": "And ",
             "line": 5,
-            "name": "User enters \"valid\" credentials",
+            "name": "User enters credentials",
             "match": {
               "location": "src\\test\\steps\\login.step.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 94210399
+              "duration": 92167199
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 6,
+            "line": 9,
             "name": "User clicks login button",
             "match": {
-              "location": "src\\test\\steps\\login.step.ts:30"
+              "location": "src\\test\\steps\\login.step.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 140040800
+              "duration": 202280699
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 17,
+            "line": 12,
             "name": "User sorts products by \"Price (low to high)\"",
             "match": {
               "location": "src\\test\\steps\\sorting.step.ts:5"
             },
             "result": {
               "status": "passed",
-              "duration": 34817800
+              "duration": 38625100
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 18,
-            "name": "products should be sorted in \"ascending\" order by \"price\"",
+            "line": 13,
+            "name": "products should be sorted in \"ascending\" order by \"<name>\"",
             "match": {
               "location": "src\\test\\steps\\sorting.step.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 59886800
+              "duration": 5934900
             }
           },
           {
@@ -440,7 +525,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 525415500
+              "duration": 884449899
             }
           }
         ],
@@ -449,17 +534,17 @@
       },
       {
         "description": "",
-        "id": "sorting;sort-products-by-price-high-to-low",
-        "keyword": "Scenario",
+        "id": "sorting-products;sort-products",
+        "keyword": "Scenario Outline",
         "line": 20,
-        "name": "Sort products by price high to low",
+        "name": "Sort products",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1022087800
+              "duration": 1811825899
             }
           },
           {
@@ -472,59 +557,76 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3354693699
+              "duration": 2071126000
             }
           },
           {
-            "arguments": [],
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "standard_user"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "password",
+                      "secret_sauce"
+                    ]
+                  }
+                ]
+              }
+            ],
             "keyword": "And ",
             "line": 5,
-            "name": "User enters \"valid\" credentials",
+            "name": "User enters credentials",
             "match": {
               "location": "src\\test\\steps\\login.step.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 106866799
+              "duration": 101224900
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 6,
+            "line": 9,
             "name": "User clicks login button",
             "match": {
-              "location": "src\\test\\steps\\login.step.ts:30"
+              "location": "src\\test\\steps\\login.step.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 142604599
+              "duration": 143569999
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 21,
+            "line": 12,
             "name": "User sorts products by \"Price (high to low)\"",
             "match": {
               "location": "src\\test\\steps\\sorting.step.ts:5"
             },
             "result": {
               "status": "passed",
-              "duration": 36340399
+              "duration": 36342300
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 22,
-            "name": "products should be sorted in \"descending\" order by \"price\"",
+            "line": 13,
+            "name": "products should be sorted in \"descending\" order by \"<name>\"",
             "match": {
               "location": "src\\test\\steps\\sorting.step.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 62232500
+              "duration": 1024999
             }
           },
           {
@@ -532,7 +634,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 459179400
+              "duration": 364899800
             }
           }
         ],
@@ -540,10 +642,10 @@
         "type": "scenario"
       }
     ],
-    "id": "sorting",
+    "id": "sorting-products",
     "line": 1,
     "keyword": "Feature",
-    "name": "sorting",
+    "name": "sorting products",
     "tags": [],
     "uri": "src\\test\\feature\\sorting.feature"
   }

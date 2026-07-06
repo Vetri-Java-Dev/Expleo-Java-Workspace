@@ -1,4 +1,4 @@
-import {Given, When, Then} from "@cucumber/cucumber"
+import {Given, When, Then, DataTable} from "@cucumber/cucumber"
 import { CustomWorld } from "../world/CustomWorld";
 import Credentials from "../../../test-data/login.json"
 import {expect} from "@playwright/test"
@@ -8,18 +8,15 @@ Given('User navigates to application', async function (this:CustomWorld) {
     await this.loginPage.navigateToLogin()
 });
 
-When('User enters {string} credentials', async function (this:CustomWorld,type:string) {
+When('User enters credentials', async function (this: CustomWorld,table: DataTable) {
 
-    if(type==="valid"){
-        await this.logger.info("User entering valid credentials")
-        const validCredentials=Credentials.find(user=>user.type==="valid")
-        await this.loginPage.login(validCredentials!.username,validCredentials!.password)
-    }
-    else if(type==="invalid"){
-        await this.logger.info("User entering invalid credentials")
-        const invalidCredentials=Credentials.find(user=>user.type==="invalid")
-        await this.loginPage.login(invalidCredentials!.username,invalidCredentials!.password)
-    }
+    const data=table.rowsHash() as {
+        username: string;
+        password: string;
+        type: string;
+    };
+
+    await this.loginPage.login(data.username,data.password);
 });
 
 Then('User navigates to homepage', async function (this: CustomWorld) {

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "chrome": "cross-env BROWSER=chromium cucumber-js",
+    "chrome-test": "cross-env BROWSER=chromium cucumber-js --parallel 3",
     "report": "node generate-report.js",
     "allure:generate": "allure generate reports/allure-results --clean -o reports/allure-report",
     "allure:open": "allure open reports/allure-report"

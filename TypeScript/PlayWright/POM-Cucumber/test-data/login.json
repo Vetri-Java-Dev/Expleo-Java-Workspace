@@ -1,12 +1,12 @@
 [
   {
     "type":"valid",
-    "username": "standard_user",
-    "password": "secret_sauce"
+    "username":"standard_user",
+    "password":"secret_sauce"
   },
   {
     "type":"invalid",
-    "username": "standard_user",
-    "password": "wrong_password"
+    "username":"standard_user",
+    "password":"wrongpassword"
   }
 ]

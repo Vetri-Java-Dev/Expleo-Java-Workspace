@@ -5,11 +5,15 @@ Background:
     And User clicks on register link
 
 Scenario: Valid Registration
-    And User enters the first name as "vetrivel"
-    And User enters the last name as "b"
-    And User enters the email as "bvetrivel48787@gmail.com" for registration
-    And User enters the phone as "7896541230"
-    And User enters the password as "Vetri@2005" and confirmation password as "Vetri@2005"
+    And User enters the first name as "<firstName>"
+    And User enters the last name as "<lastName>"
+    And User enters the email as "<email>" for registration
+    And User enters the phone as "<phone>"
+    And User enters the password as "<password>" and confirmation password as "<password>"
     And User accepts privacy policy
     When User clicks register button
     Then success message should be visible
+
+    Examples:
+        | firstName | lastName | email | phone | password |
+        | vetrivel  | b  | bvetrivel48776487@gmail.com | 7896541230 | Vetri@2005 |

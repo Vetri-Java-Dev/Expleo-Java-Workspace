@@ -19,7 +19,7 @@ test("Bing Search Test", async ({ page }) => {
     console.log(await box.getAttribute("name"));
 
     await box.fill("playwright");
-    await box.press("Enter");
+    await page.locator("#search_icon").click();
 
     await page.locator("h2 a").first().click();
     await expect(page).toHaveTitle(/Playwright/i);

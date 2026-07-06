@@ -1,22 +1,20 @@
-Feature: sorting
+Feature: sorting products
 
 Background:
     Given User navigates to application
-    And User enters "valid" credentials
+    And User enters credentials
+    | username | standard_user |
+    | password | secret_sauce |
+
     And User clicks login button
 
-Scenario: Sort products by name A to Z
-    When User sorts products by "Name (A to Z)"
-    Then products should be sorted in "ascending" order by "name"
+Scenario Outline: Sort products
+    When User sorts products by "<option>"
+    Then products should be sorted in "<order>" order by "<name>"
 
-Scenario: Sort products by name Z to A
-    When User sorts products by "Name (Z to A)"
-    Then products should be sorted in "descending" order by "name"
-
-Scenario: Sort products by price low to high
-    When User sorts products by "Price (low to high)"
-    Then products should be sorted in "ascending" order by "price"
-
-Scenario: Sort products by price high to low
-    When User sorts products by "Price (high to low)"
-    Then products should be sorted in "descending" order by "price"
+    Examples:
+        | option | order | field |
+        |  Name (A to Z) | ascending  | name  |
+        |  Name (Z to A) | descending | name  |
+        |  Price (low to high) | ascending | price |
+        |  Price (high to low) | descending | price |

@@ -44,3 +44,157 @@
 [2026-07-06T01:08:42.956Z] INFO - User clicks login button
 [2026-07-06T01:08:43.100Z] INFO - User sorting products by Price (high to low)
 [2026-07-06T01:08:43.197Z] INFO - Products sorted by price in descending order : true
+[2026-07-06T03:44:09.885Z] INFO - User navigating to application
+[2026-07-06T03:44:11.815Z] INFO - User entering valid credentials
+[2026-07-06T03:44:11.918Z] INFO - User clicks login button
+[2026-07-06T03:44:12.046Z] INFO - User navigating to homepage
+[2026-07-06T03:44:13.290Z] INFO - User navigating to application
+[2026-07-06T03:44:14.947Z] INFO - User entering invalid credentials
+[2026-07-06T03:44:15.035Z] INFO - User clicks login button
+[2026-07-06T03:44:15.121Z] ERROR - Error message displayed
+[2026-07-06T03:44:16.362Z] INFO - User navigating to application
+[2026-07-06T03:44:18.114Z] INFO - User entering valid credentials
+[2026-07-06T03:44:18.306Z] INFO - User clicks login button
+[2026-07-06T03:44:18.469Z] INFO - User sorting products by Name (A to Z)
+[2026-07-06T03:44:18.578Z] INFO - Products sorted by name in ascending order : true
+[2026-07-06T03:44:19.996Z] INFO - User navigating to application
+[2026-07-06T03:44:21.972Z] INFO - User entering valid credentials
+[2026-07-06T03:44:22.071Z] INFO - User clicks login button
+[2026-07-06T03:44:22.216Z] INFO - User sorting products by Name (Z to A)
+[2026-07-06T03:44:22.338Z] INFO - Products sorted by name in descending order : true
+[2026-07-06T03:44:23.641Z] INFO - User navigating to application
+[2026-07-06T03:44:25.559Z] INFO - User entering valid credentials
+[2026-07-06T03:44:25.650Z] INFO - User clicks login button
+[2026-07-06T03:44:25.802Z] INFO - User sorting products by Price (low to high)
+[2026-07-06T03:44:25.968Z] INFO - Products sorted by price in ascending order : true
+[2026-07-06T03:44:27.493Z] INFO - User navigating to application
+[2026-07-06T03:44:29.501Z] INFO - User entering valid credentials
+[2026-07-06T03:44:29.591Z] INFO - User clicks login button
+[2026-07-06T03:44:29.752Z] INFO - User sorting products by Price (high to low)
+[2026-07-06T03:44:29.830Z] INFO - Products sorted by price in descending order : true
+[2026-07-06T05:10:45.487Z] INFO - User navigating to application
+[2026-07-06T05:10:47.137Z] INFO - User entering valid credentials
+[2026-07-06T05:10:47.216Z] INFO - User clicks login button
+[2026-07-06T05:10:47.334Z] INFO - User navigating to homepage
+[2026-07-06T05:10:48.331Z] INFO - User navigating to application
+[2026-07-06T05:10:49.911Z] INFO - User entering invalid credentials
+[2026-07-06T05:10:49.974Z] INFO - User clicks login button
+[2026-07-06T05:10:50.040Z] ERROR - Error message displayed
+[2026-07-06T05:10:50.989Z] INFO - User navigating to application
+[2026-07-06T05:10:52.782Z] INFO - User entering valid credentials
+[2026-07-06T05:10:52.848Z] INFO - User clicks login button
+[2026-07-06T05:10:52.956Z] INFO - User sorting products by Name (A to Z)
+[2026-07-06T05:10:53.912Z] INFO - User navigating to application
+[2026-07-06T05:10:55.466Z] INFO - User entering valid credentials
+[2026-07-06T05:10:55.534Z] INFO - User clicks login button
+[2026-07-06T05:10:55.640Z] INFO - User sorting products by Name (Z to A)
+[2026-07-06T05:10:56.607Z] INFO - User navigating to application
+[2026-07-06T05:10:58.185Z] INFO - User entering valid credentials
+[2026-07-06T05:10:58.250Z] INFO - User clicks login button
+[2026-07-06T05:10:58.344Z] INFO - User sorting products by Price (low to high)
+[2026-07-06T05:10:59.278Z] INFO - User navigating to application
+[2026-07-06T05:11:00.978Z] INFO - User entering valid credentials
+[2026-07-06T05:11:01.044Z] INFO - User clicks login button
+[2026-07-06T05:11:01.152Z] INFO - User sorting products by Price (high to low)
+[2026-07-06T06:09:03.301Z] INFO - User navigating to application
+[2026-07-06T06:09:06.307Z] INFO - User navigating to application
+[2026-07-06T06:09:09.176Z] INFO - User navigating to application
+[2026-07-06T06:09:11.766Z] INFO - User navigating to application
+[2026-07-06T06:09:14.409Z] INFO - User navigating to application
+[2026-07-06T06:09:16.747Z] INFO - User navigating to application
+[2026-07-06T06:10:49.053Z] INFO - User navigating to application
+[2026-07-06T06:10:51.775Z] INFO - User navigating to application
+[2026-07-06T06:10:54.959Z] INFO - User navigating to application
+[2026-07-06T06:10:57.788Z] INFO - User navigating to application
+[2026-07-06T06:11:00.710Z] INFO - User navigating to application
+[2026-07-06T06:11:03.482Z] INFO - User navigating to application
+[2026-07-06T06:22:50.802Z] INFO - User navigating to application
+[2026-07-06T06:22:53.953Z] INFO - User navigating to application
+[2026-07-06T06:22:57.162Z] INFO - User navigating to application
+[2026-07-06T06:23:00.469Z] INFO - User navigating to application
+[2026-07-06T06:23:03.405Z] INFO - User navigating to application
+[2026-07-06T06:23:06.664Z] INFO - User navigating to application
+[2026-07-06T06:24:42.496Z] INFO - User navigating to application
+[2026-07-06T06:24:44.226Z] INFO - User clicks login button
+[2026-07-06T06:24:44.423Z] INFO - User navigating to homepage
+[2026-07-06T06:24:45.468Z] INFO - User navigating to application
+[2026-07-06T06:24:47.264Z] INFO - User clicks login button
+[2026-07-06T06:24:47.350Z] ERROR - Error message displayed
+[2026-07-06T06:24:48.518Z] INFO - User navigating to application
+[2026-07-06T06:24:51.444Z] INFO - User navigating to application
+[2026-07-06T06:24:54.276Z] INFO - User navigating to application
+[2026-07-06T06:24:57.144Z] INFO - User navigating to application
+[2026-07-06T06:31:43.484Z] INFO - User navigating to application
+[2026-07-06T06:31:45.317Z] INFO - User clicks login button
+[2026-07-06T06:31:45.489Z] INFO - User navigating to homepage
+[2026-07-06T06:31:46.703Z] INFO - User navigating to application
+[2026-07-06T06:31:48.533Z] INFO - User clicks login button
+[2026-07-06T06:31:48.619Z] ERROR - Error message displayed
+[2026-07-06T06:31:49.926Z] INFO - User navigating to application
+[2026-07-06T06:31:52.862Z] INFO - User navigating to application
+[2026-07-06T06:31:55.400Z] INFO - User navigating to application
+[2026-07-06T06:31:58.163Z] INFO - User navigating to application
+[2026-07-06T07:10:23.307Z] INFO - User navigating to application
+[2026-07-06T07:10:25.187Z] INFO - User clicks login button
+[2026-07-06T07:10:25.367Z] INFO - User navigating to homepage
+[2026-07-06T07:10:26.494Z] INFO - User navigating to application
+[2026-07-06T07:10:28.256Z] INFO - User clicks login button
+[2026-07-06T07:10:28.349Z] ERROR - Error message displayed
+[2026-07-06T07:10:29.487Z] INFO - User navigating to application
+[2026-07-06T07:10:32.247Z] INFO - User navigating to application
+[2026-07-06T07:10:34.951Z] INFO - User navigating to application
+[2026-07-06T07:10:37.730Z] INFO - User navigating to application
+[2026-07-06T07:13:02.417Z] INFO - User navigating to application
+[2026-07-06T07:13:04.236Z] INFO - User clicks login button
+[2026-07-06T07:13:04.398Z] INFO - User navigating to homepage
+[2026-07-06T07:13:05.593Z] INFO - User navigating to application
+[2026-07-06T07:13:07.450Z] INFO - User clicks login button
+[2026-07-06T07:13:07.541Z] ERROR - Error message displayed
+[2026-07-06T07:13:08.915Z] INFO - User navigating to application
+[2026-07-06T07:13:10.816Z] INFO - User clicks login button
+[2026-07-06T07:13:11.006Z] INFO - User sorting products by Name (A to Z)
+[2026-07-06T07:13:12.287Z] INFO - User navigating to application
+[2026-07-06T07:13:14.121Z] INFO - User clicks login button
+[2026-07-06T07:13:14.264Z] INFO - User sorting products by Name (Z to A)
+[2026-07-06T07:13:15.431Z] INFO - User navigating to application
+[2026-07-06T07:13:17.235Z] INFO - User clicks login button
+[2026-07-06T07:13:17.403Z] INFO - User sorting products by Price (low to high)
+[2026-07-06T07:13:18.689Z] INFO - User navigating to application
+[2026-07-06T07:13:20.520Z] INFO - User clicks login button
+[2026-07-06T07:13:20.733Z] INFO - User sorting products by Price (high to low)
+[2026-07-06T07:14:23.524Z] INFO - User navigating to application
+[2026-07-06T07:14:25.331Z] INFO - User clicks login button
+[2026-07-06T07:14:25.487Z] INFO - User navigating to homepage
+[2026-07-06T07:14:26.751Z] INFO - User navigating to application
+[2026-07-06T07:14:28.479Z] INFO - User clicks login button
+[2026-07-06T07:14:28.554Z] ERROR - Error message displayed
+[2026-07-06T07:14:29.757Z] INFO - User navigating to application
+[2026-07-06T07:14:31.724Z] INFO - User clicks login button
+[2026-07-06T07:14:31.873Z] INFO - User sorting products by Name (A to Z)
+[2026-07-06T07:14:33.068Z] INFO - User navigating to application
+[2026-07-06T07:14:34.961Z] INFO - User clicks login button
+[2026-07-06T07:14:35.103Z] INFO - User sorting products by Name (Z to A)
+[2026-07-06T07:14:36.423Z] INFO - User navigating to application
+[2026-07-06T07:14:38.299Z] INFO - User clicks login button
+[2026-07-06T07:14:38.434Z] INFO - User sorting products by Price (low to high)
+[2026-07-06T07:14:39.646Z] INFO - User navigating to application
+[2026-07-06T07:14:41.394Z] INFO - User clicks login button
+[2026-07-06T07:14:41.531Z] INFO - User sorting products by Price (high to low)
+[2026-07-06T07:16:38.848Z] INFO - User navigating to application
+[2026-07-06T07:16:38.856Z] INFO - User navigating to application
+[2026-07-06T07:16:38.875Z] INFO - User navigating to application
+[2026-07-06T07:16:40.944Z] INFO - User clicks login button
+[2026-07-06T07:16:41.015Z] INFO - User clicks login button
+[2026-07-06T07:16:41.210Z] ERROR - Error message displayed
+[2026-07-06T07:16:41.218Z] INFO - User navigating to homepage
+[2026-07-06T07:16:41.423Z] INFO - User clicks login button
+[2026-07-06T07:16:41.620Z] INFO - User sorting products by Name (A to Z)
+[2026-07-06T07:16:43.381Z] INFO - User navigating to application
+[2026-07-06T07:16:43.415Z] INFO - User navigating to application
+[2026-07-06T07:16:43.925Z] INFO - User navigating to application
+[2026-07-06T07:16:45.348Z] INFO - User clicks login button
+[2026-07-06T07:16:45.464Z] INFO - User clicks login button
+[2026-07-06T07:16:45.506Z] INFO - User sorting products by Name (Z to A)
+[2026-07-06T07:16:45.673Z] INFO - User sorting products by Price (low to high)
+[2026-07-06T07:16:46.098Z] INFO - User clicks login button
+[2026-07-06T07:16:46.242Z] INFO - User sorting products by Price (high to low)
