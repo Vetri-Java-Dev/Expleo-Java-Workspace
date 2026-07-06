@@ -24,7 +24,22 @@ module.exports={
         format:[
             "progress-bar",
             "json:report/cucumber-report.json",
-            "html:report/cucumber-html.html"
+            "html:report/cucumber-html.html",
+            "rerun:@rerun.txt"
         ]
-    }
+    },
+
+    rerun: {
+    requireModule: ["ts-node/register"],
+    require: [
+      "src/hooks/**/*.ts",
+      "src/test/steps/**/*.ts"
+    ],
+    paths: ["@rerun.txt"],
+    format: [
+      "progress",
+      "json:reports/rerun-report.json",
+      "rerun:@rerun.txt"
+    ]
+  }
 }

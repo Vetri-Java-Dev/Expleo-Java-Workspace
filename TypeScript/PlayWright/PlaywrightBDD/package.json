@@ -9,13 +9,34 @@
   "main": "index.js",
   
   "scripts": {
+  
+    
+  "pretest": "if exist rerun.txt del rerun.txt",
+  
+    
   "test": "cucumber-js --parallel 4",
+  
+    
   "posttest": "npx ts-node src/helper/report.mts",
+  
+    
   "parallel": "cucumber-js src/test/features --parallel 2",
+  
+    
   "ci": "cucumber-js src/test/features --format json:reports/report.json",
+  
+    
   "chrome": "cross-env BROWSER=chromium cucumber-js",
+  
+    
   "firefox": "cross-env BROWSER=firefox cucumber-js",
-  "webkit": "cross-env BROWSER=webkit cucumber-js"
+  
+    
+  "webkit": "cross-env BROWSER=webkit cucumber-js",
+  
+    
+  "test:failed": "cucumber-js -p rerun"
+  
   },
   
   "keywords": [],
@@ -44,7 +65,10 @@
   "multiple-cucumber-html-reporter": "^4.0.0",
   
     
-  "ts-node": "^10.9.2"
+  "ts-node": "^10.9.2",
+  
+    
+  "winston": "^3.19.0"
   
   }
 }

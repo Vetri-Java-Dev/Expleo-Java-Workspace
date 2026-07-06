@@ -1,6 +1,0 @@
-{
-  username: 'invalidlogin@gmail',
-  password: 'admin',
-  expectedMessage: 'Wrong Email',
-  expectedResult: 'Failure'
-}

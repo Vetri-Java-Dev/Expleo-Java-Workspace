@@ -1,4 +1,0 @@
-Current Page Url :  https://demoqa.com/browser-windows
-New Window Url :  https://demoqa.com/sample
-Promise { <pending> }
-https://demoqa.com/browser-windows
