@@ -7,14 +7,14 @@
         "id": "login;invalid-login",
         "keyword": "Scenario",
         "line": 14,
-        "name": "Invalid login",
+        "name": "Invalid Login",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1711192399
+              "duration": 1520644399
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1961405100
+              "duration": 3248095999
             }
           },
           {
@@ -57,7 +57,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 215412100
+              "duration": 316288599
             }
           },
           {
@@ -70,7 +70,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 193675199
+              "duration": 127771099
             }
           },
           {
@@ -83,7 +83,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 31066899
+              "duration": 18186400
             }
           },
           {
@@ -91,7 +91,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 811456799
+              "duration": 722297200
             }
           }
         ],
@@ -103,14 +103,14 @@
         "id": "login;valid-login",
         "keyword": "Scenario",
         "line": 6,
-        "name": "Valid login",
+        "name": "Valid Login",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1706634600
+              "duration": 1712907099
             }
           },
           {
@@ -123,7 +123,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1924843400
+              "duration": 2986893299
             }
           },
           {
@@ -153,7 +153,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 176174300
+              "duration": 337127399
             }
           },
           {
@@ -166,7 +166,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 273423500
+              "duration": 276831299
             }
           },
           {
@@ -179,7 +179,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 40420600
+              "duration": 50005000
             }
           },
           {
@@ -187,7 +187,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 627609800
+              "duration": 663676400
             }
           }
         ],
@@ -198,7 +198,7 @@
     "id": "login",
     "line": 1,
     "keyword": "Feature",
-    "name": "login",
+    "name": "Login",
     "tags": [],
     "uri": "src\\test\\feature\\login.feature"
   },
@@ -217,7 +217,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1692422399
+              "duration": 1504275900
             }
           },
           {
@@ -230,7 +230,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2379626800
+              "duration": 3208990599
             }
           },
           {
@@ -260,7 +260,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 222584399
+              "duration": 327979999
             }
           },
           {
@@ -273,7 +273,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 189027899
+              "duration": 215938500
             }
           },
           {
@@ -286,20 +286,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 65488400
+              "duration": 119332300
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 13,
-            "name": "products should be sorted in \"ascending\" order by \"<name>\"",
+            "name": "products should be sorted in \"ascending\" order by \"name\"",
             "match": {
               "location": "src\\test\\steps\\sorting.step.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 6830799
+              "duration": 137066899
             }
           },
           {
@@ -307,7 +307,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 426627500
+              "duration": 625894699
             }
           }
         ],
@@ -326,7 +326,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1489981200
+              "duration": 1530430099
             }
           },
           {
@@ -339,7 +339,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1858688200
+              "duration": 3660162499
             }
           },
           {
@@ -369,7 +369,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 107950600
+              "duration": 128462700
             }
           },
           {
@@ -382,7 +382,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 147914099
+              "duration": 201105800
             }
           },
           {
@@ -395,20 +395,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 213684799
+              "duration": 126404599
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 13,
-            "name": "products should be sorted in \"descending\" order by \"<name>\"",
+            "name": "products should be sorted in \"descending\" order by \"name\"",
             "match": {
               "location": "src\\test\\steps\\sorting.step.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 5370899
+              "duration": 97884000
             }
           },
           {
@@ -416,7 +416,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 690196500
+              "duration": 455429299
             }
           }
         ],
@@ -435,7 +435,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1360801099
+              "duration": 1550747900
             }
           },
           {
@@ -448,7 +448,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1956082099
+              "duration": 3571110300
             }
           },
           {
@@ -478,7 +478,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 92167199
+              "duration": 113666399
             }
           },
           {
@@ -491,7 +491,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 202280699
+              "duration": 200850200
             }
           },
           {
@@ -504,20 +504,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 38625100
+              "duration": 135350999
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 13,
-            "name": "products should be sorted in \"ascending\" order by \"<name>\"",
+            "name": "products should be sorted in \"ascending\" order by \"price\"",
             "match": {
               "location": "src\\test\\steps\\sorting.step.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 5934900
+              "duration": 109149499
             }
           },
           {
@@ -525,7 +525,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 884449899
+              "duration": 500352399
             }
           }
         ],
@@ -544,7 +544,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1811825899
+              "duration": 1568029700
             }
           },
           {
@@ -557,7 +557,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2071126000
+              "duration": 3522507800
             }
           },
           {
@@ -587,7 +587,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 101224900
+              "duration": 112579799
             }
           },
           {
@@ -600,7 +600,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 143569999
+              "duration": 225568199
             }
           },
           {
@@ -613,20 +613,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 36342300
+              "duration": 86824699
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 13,
-            "name": "products should be sorted in \"descending\" order by \"<name>\"",
+            "name": "products should be sorted in \"descending\" order by \"price\"",
             "match": {
               "location": "src\\test\\steps\\sorting.step.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 1024999
+              "duration": 68910500
             }
           },
           {
@@ -634,7 +634,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 364899800
+              "duration": 543557799
             }
           }
         ],
@@ -645,7 +645,7 @@
     "id": "sorting-products",
     "line": 1,
     "keyword": "Feature",
-    "name": "sorting products",
+    "name": "Sorting Products",
     "tags": [],
     "uri": "src\\test\\feature\\sorting.feature"
   }

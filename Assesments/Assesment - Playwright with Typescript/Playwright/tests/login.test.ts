@@ -9,8 +9,7 @@ test.describe("Login test @Smoke",()=> {
         });
     });
 
-    test("Valid login", async ({ homePage, loginPage, page })=>{
-
+    test("Valid login", async ({ homePage, loginPage})=>{
         await homePage.clickMyAccountMenu();
         await homePage.clickLogin();
 
@@ -19,7 +18,7 @@ test.describe("Login test @Smoke",()=> {
         await expect(loginPage.myAccount).toBeVisible();
     });
 
-    test("Invalid login", async ({ homePage, loginPage, page }) => {
+    test("Invalid login", async ({ homePage, loginPage}) => {
         
         await homePage.clickMyAccountMenu();
         await homePage.clickLogin();

@@ -198,3 +198,67 @@
 [2026-07-06T07:16:45.673Z] INFO - User sorting products by Price (low to high)
 [2026-07-06T07:16:46.098Z] INFO - User clicks login button
 [2026-07-06T07:16:46.242Z] INFO - User sorting products by Price (high to low)
+[2026-07-06T07:26:33.070Z] INFO - User navigating to application
+[2026-07-06T07:26:33.279Z] INFO - User navigating to application
+[2026-07-06T07:26:33.357Z] INFO - User navigating to application
+[2026-07-06T07:26:44.829Z] INFO - User navigating to application
+[2026-07-06T07:26:45.121Z] INFO - User navigating to application
+[2026-07-06T07:26:45.208Z] INFO - User navigating to application
+[2026-07-06T07:29:03.632Z] INFO - User navigating to application
+[2026-07-06T07:29:03.633Z] INFO - User navigating to application
+[2026-07-06T07:29:03.711Z] INFO - User navigating to application
+[2026-07-06T07:29:11.131Z] INFO - User navigating to application
+[2026-07-06T07:29:15.229Z] INFO - User navigating to application
+[2026-07-06T07:29:15.282Z] INFO - User navigating to application
+[2026-07-06T07:30:17.419Z] INFO - User navigating to application
+[2026-07-06T07:30:17.472Z] INFO - User navigating to application
+[2026-07-06T07:30:17.583Z] INFO - User navigating to application
+[2026-07-06T07:30:29.670Z] INFO - User navigating to application
+[2026-07-06T07:30:29.698Z] INFO - User navigating to application
+[2026-07-06T07:30:29.748Z] INFO - User navigating to application
+[2026-07-06T07:43:42.810Z] INFO - Navigating to application
+[2026-07-06T07:43:42.817Z] INFO - Navigating to application
+[2026-07-06T07:43:42.978Z] INFO - Navigating to application
+[2026-07-06T07:43:44.917Z] INFO - Entering credentials
+[2026-07-06T07:43:44.964Z] INFO - Entering credentials
+[2026-07-06T07:43:44.981Z] INFO - Entering credentials
+[2026-07-06T07:43:45.053Z] INFO - Clicking Login
+[2026-07-06T07:43:45.102Z] INFO - Clicking Login
+[2026-07-06T07:43:45.125Z] INFO - Clicking Login
+[2026-07-06T07:43:47.410Z] INFO - Navigating to application
+[2026-07-06T07:43:47.666Z] INFO - Navigating to application
+[2026-07-06T07:43:47.686Z] INFO - Navigating to application
+[2026-07-06T07:43:49.242Z] INFO - Entering credentials
+[2026-07-06T07:43:49.397Z] INFO - Entering credentials
+[2026-07-06T07:43:49.486Z] INFO - Entering credentials
+[2026-07-06T07:43:49.534Z] INFO - Clicking Login
+[2026-07-06T07:43:49.719Z] INFO - Clicking Login
+[2026-07-06T07:43:49.756Z] INFO - Clicking Login
+[2026-07-06T07:44:54.316Z] INFO - User navigating to application
+[2026-07-06T07:44:54.314Z] INFO - User navigating to application
+[2026-07-06T07:44:54.412Z] INFO - User navigating to application
+[2026-07-06T07:44:57.957Z] INFO - User navigating to application
+[2026-07-06T07:44:58.213Z] INFO - User navigating to application
+[2026-07-06T07:44:58.255Z] INFO - User navigating to application
+[2026-07-06T07:45:38.573Z] INFO - User navigating to application
+[2026-07-06T07:45:38.588Z] INFO - User navigating to application
+[2026-07-06T07:45:38.780Z] INFO - User navigating to application
+[2026-07-06T07:45:42.096Z] INFO - User clicks login button
+[2026-07-06T07:45:42.102Z] INFO - User clicks login button
+[2026-07-06T07:45:42.142Z] INFO - User clicks login button
+[2026-07-06T07:45:42.270Z] ERROR - Error message displayed
+[2026-07-06T07:45:42.331Z] INFO - User sorting products by Name (A to Z)
+[2026-07-06T07:45:42.373Z] INFO - User navigating to homepage
+[2026-07-06T07:45:42.557Z] INFO - Products sorted by name in ascending order : true
+[2026-07-06T07:45:44.546Z] INFO - User navigating to application
+[2026-07-06T07:45:44.639Z] INFO - User navigating to application
+[2026-07-06T07:45:44.769Z] INFO - User navigating to application
+[2026-07-06T07:45:48.326Z] INFO - User clicks login button
+[2026-07-06T07:45:48.335Z] INFO - User clicks login button
+[2026-07-06T07:45:48.405Z] INFO - User clicks login button
+[2026-07-06T07:45:48.544Z] INFO - User sorting products by Price (low to high)
+[2026-07-06T07:45:48.559Z] INFO - User sorting products by Name (Z to A)
+[2026-07-06T07:45:48.632Z] INFO - User sorting products by Price (high to low)
+[2026-07-06T07:45:48.758Z] INFO - Products sorted by name in descending order : true
+[2026-07-06T07:45:48.769Z] INFO - Products sorted by price in ascending order : true
+[2026-07-06T07:45:48.785Z] INFO - Products sorted by price in descending order : true

@@ -50,7 +50,7 @@ Then('products should be sorted in {string} order by {string}', async function (
             }
         }
 
-        await this.logger.info("Products sorted by price in "+order+" order : "+isSorted)
+        await this.logger.info("Products sorted by price in " + order + " order : " +isSorted)
         expect(isSorted).toBeTruthy()
     }
 });

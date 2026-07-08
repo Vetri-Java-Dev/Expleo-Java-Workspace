@@ -22,7 +22,6 @@ export function readRegisterData(){
         skip_empty_lines:true,
         trim:true,
         columns:true,
-        bom: true
     }) as RegisterationData[] 
 }
 

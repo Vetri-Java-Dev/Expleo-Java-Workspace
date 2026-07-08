@@ -1,0 +1,223 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "account-registration;verify-user-can-register-a-new-account-with-valid-details",
+        "keyword": "Scenario Outline",
+        "line": 16,
+        "name": "Verify user can register a new account with valid details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 344910799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user navigates to demowebshop application",
+            "match": {
+              "location": "src\\test\\steps\\register.step.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3588539100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user clicks register button",
+            "match": {
+              "location": "src\\test\\steps\\register.step.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 642598799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "user redirects to register page",
+            "match": {
+              "location": "src\\test\\steps\\register.step.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4591700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "the user enters \"male\", \"Vetri\", \"B\", \"testing8786473987@gmail.com\", and \"Vetri@2005\"",
+            "match": {
+              "location": "src\\test\\steps\\register.step.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 452253300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the user clicks the Register button",
+            "match": {
+              "location": "src\\test\\steps\\register.step.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 910761500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the account should be created successfully",
+            "match": {
+              "location": "src\\test\\steps\\register.step.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 71389599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 246563599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "account-registration;verify-user-cannot-register-with-an-existing-email-address",
+        "keyword": "Scenario Outline",
+        "line": 26,
+        "name": "Verify user cannot register with an existing email address",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 290443400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user navigates to demowebshop application",
+            "match": {
+              "location": "src\\test\\steps\\register.step.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3363393599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user clicks register button",
+            "match": {
+              "location": "src\\test\\steps\\register.step.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 569495200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "user redirects to register page",
+            "match": {
+              "location": "src\\test\\steps\\register.step.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2669699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "the user enters \"male\", \"Vetri\", \"B\", \"testing@gmail.com\", and \"Vetri@2005\"",
+            "match": {
+              "location": "src\\test\\steps\\register.step.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 430637900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "the user clicks the Register button",
+            "match": {
+              "location": "src\\test\\steps\\register.step.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 770098700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "an error message should be displayed indicating the email already exists",
+            "match": {
+              "location": "src\\test\\steps\\register.step.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 117739199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 194547699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "account-registration",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Account Registration",
+    "tags": [],
+    "uri": "src\\test\\feature\\register.feature"
+  }
+]

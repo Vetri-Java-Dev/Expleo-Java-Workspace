@@ -1,0 +1,29 @@
+{
+  "name": "assesment---playwright-cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:register": "cucumber-js --profile register",
+    "test:login": "cucumber-js --profile login",
+    "test": "npm run test:register & npm run test:login",
+    "report": "ts-node src/test/utility/generate-report.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.0.0",
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.1",
+    "multiple-cucumber-html-reporter": "^4.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "csv-parse": "^7.0.1",
+    "csv-parser": "^3.2.1",
+    "winston": "^3.19.0"
+  }
+}
