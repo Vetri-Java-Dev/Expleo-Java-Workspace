@@ -13,7 +13,7 @@ Feature: Account Registration
 
     Examples:
       | gender | firstName | lastName | email | password |
-      | male | Vetri | B | testing8786473987@gmail.com | Vetri@2005 |
+      | male | Vetri | B | testing87473987@gmail.com | Vetri@2005 |
 
   Scenario Outline: Verify user cannot register with an existing email address
 
